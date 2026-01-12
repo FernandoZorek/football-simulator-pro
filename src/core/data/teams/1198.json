@@ -1,0 +1,297 @@
+{
+  "id": "1198",
+  "name": "remo",
+  "shortName": "REM",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.8420208718533762,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1198.png",
+  "venue": {
+    "id": 262,
+    "name": "Estádio Estadual Jornalista Edgar Augusto Proença",
+    "address": "Rodovia Augusto Montenegro 3101, Mangueirão",
+    "city": "Belém, Pará",
+    "capacity": 53635,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/262.png"
+  },
+  "players": [
+    {
+      "id": "1198-joaovictor",
+      "name": "Joao Victor",
+      "age": 20,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/613323.png"
+    },
+    {
+      "id": "1198-marceloran",
+      "name": "Marcelo Rangel",
+      "age": 37,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77812.png"
+    },
+    {
+      "id": "1198-ygorvinhas",
+      "name": "Ygor Vinhas",
+      "age": 31,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9694.png"
+    },
+    {
+      "id": "1198-jorge",
+      "name": "Jorge",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9985.png"
+    },
+    {
+      "id": "1198-kaykyalmei",
+      "name": "Kayky Almeida",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/404539.png"
+    },
+    {
+      "id": "1198-klaus",
+      "name": "Klaus",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/10380.png"
+    },
+    {
+      "id": "1198-marcelinho",
+      "name": "Marcelinho",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/268877.png"
+    },
+    {
+      "id": "1198-savio",
+      "name": "Sávio",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9828.png"
+    },
+    {
+      "id": "1198-ctassano",
+      "name": "C. Tassano",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/36833.png"
+    },
+    {
+      "id": "1198-caiovinici",
+      "name": "Caio Vinícius",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/10312.png"
+    },
+    {
+      "id": "1198-vcantillo",
+      "name": "V. Cantillo",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/13580.png"
+    },
+    {
+      "id": "1198-madison",
+      "name": "Madison",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10345.png"
+    },
+    {
+      "id": "1198-nathan",
+      "name": "Nathan",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/9883.png"
+    },
+    {
+      "id": "1198-pedrocastr",
+      "name": "Pedro Castro",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10526.png"
+    },
+    {
+      "id": "1198-regis",
+      "name": "Régis",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10251.png"
+    },
+    {
+      "id": "1198-ptachtsidi",
+      "name": "P. Tachtsidis",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/31741.png"
+    },
+    {
+      "id": "1198-zericardo",
+      "name": "Zé Ricardo",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10310.png"
+    },
+    {
+      "id": "1198-alefmanga",
+      "name": "Alef Manga",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/96343.png"
+    },
+    {
+      "id": "1198-carlinhos",
+      "name": "Carlinhos",
+      "age": 28,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/70297.png"
+    },
+    {
+      "id": "1198-dodo",
+      "name": "Dodo",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/544940.png"
+    },
+    {
+      "id": "1198-eduardomel",
+      "name": "Eduardo Melo",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/197073.png"
+    },
+    {
+      "id": "1198-nferreira",
+      "name": "N. Ferreira",
+      "age": 23,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/352930.png"
+    },
+    {
+      "id": "1198-giovannipa",
+      "name": "Giovanni Pavani",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/159960.png"
+    },
+    {
+      "id": "1198-jaderson",
+      "name": "Jáderson",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10146.png"
+    },
+    {
+      "id": "1198-janderson",
+      "name": "Janderson",
+      "age": 26,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10260.png"
+    },
+    {
+      "id": "1198-joaopedro",
+      "name": "João Pedro",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/96450.png"
+    },
+    {
+      "id": "1198-marrony",
+      "name": "Marrony",
+      "age": 26,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10574.png"
+    }
+  ]
+}

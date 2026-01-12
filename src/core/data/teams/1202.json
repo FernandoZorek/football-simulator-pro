@@ -1,0 +1,207 @@
+{
+  "id": "1202",
+  "name": "Aparecidense",
+  "shortName": "APA",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.8643736258016695,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1202.png",
+  "venue": {
+    "id": 209,
+    "name": "Estádio Annibal Batista de Toledo",
+    "address": "Rua Onze de Maio",
+    "city": "Aparecida de Goiânia, Goiás",
+    "capacity": 8000,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/209.png"
+  },
+  "players": [
+    {
+      "id": "1202-matheusalv",
+      "name": "Matheus Alves",
+      "age": 31,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/10333.png"
+    },
+    {
+      "id": "1202-pedrohenri",
+      "name": "Pedro Henrique",
+      "age": 40,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/55273.png"
+    },
+    {
+      "id": "1202-davidjunio",
+      "name": "David Junio",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/54227.png"
+    },
+    {
+      "id": "1202-enricofran",
+      "name": "Enrico Fransozi",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/453373.png"
+    },
+    {
+      "id": "1202-martinsiva",
+      "name": "Martins Ivan",
+      "age": 33,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588663.png"
+    },
+    {
+      "id": "1202-lauro",
+      "name": "Lauro",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588664.png"
+    },
+    {
+      "id": "1202-menesespau",
+      "name": "Meneses Paulo",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588665.png"
+    },
+    {
+      "id": "1202-wellington",
+      "name": "Wellington Carvalho",
+      "age": 32,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9766.png"
+    },
+    {
+      "id": "1202-gustavoxav",
+      "name": "Gustavo Xavier",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/356839.png"
+    },
+    {
+      "id": "1202-dyego",
+      "name": "Dyego",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588666.png"
+    },
+    {
+      "id": "1202-higorleite",
+      "name": "Higor Leite",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9288.png"
+    },
+    {
+      "id": "1202-juninho",
+      "name": "Juninho",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/588667.png"
+    },
+    {
+      "id": "1202-kaionunes",
+      "name": "Kaio Nunes",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/80653.png"
+    },
+    {
+      "id": "1202-matheuscha",
+      "name": "Matheus Chaves",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/294811.png"
+    },
+    {
+      "id": "1202-victorhugo",
+      "name": "Victor Hugo Rodrigues Pimenta",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/323268.png"
+    },
+    {
+      "id": "1202-allefdefre",
+      "name": "Allef de Freitas Rodrigues",
+      "age": 31,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/588668.png"
+    },
+    {
+      "id": "1202-cesarjulio",
+      "name": "Cesar Julio",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/588669.png"
+    },
+    {
+      "id": "1202-renangorne",
+      "name": "Renan Gorne",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/80567.png"
+    }
+  ]
+}

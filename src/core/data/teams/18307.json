@@ -1,0 +1,293 @@
+{
+  "id": "18307",
+  "name": "Nova Venécia",
+  "shortName": "NOV",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.0334931839766583,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/18307.png",
+  "venue": {
+    "id": 20440,
+    "name": "Estádio Municipal Zenor Pedrosa Rocha",
+    "address": "R. do Esporte, 99 - Centro",
+    "city": "Nova Venécia, Espírito Santo",
+    "capacity": 2000,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/20440.png"
+  },
+  "players": [
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-lucastavar",
+      "name": "Lucas Tavares",
+      "age": 33,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/106604.png"
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "18307-sandrinho",
+      "name": "Sandrinho",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/457902.png"
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-darlanquin",
+      "name": "Darlan Quintiliano Machado",
+      "age": 37,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54150.png"
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-matheuzao",
+      "name": "Matheuzão",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/197303.png"
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-matheusnob",
+      "name": "Matheus Nobre",
+      "age": 20,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/457907.png"
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18307-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    }
+  ]
+}

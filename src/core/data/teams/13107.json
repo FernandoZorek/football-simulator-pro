@@ -1,0 +1,261 @@
+{
+  "id": "13107",
+  "name": "Audax Rio",
+  "shortName": "AUD",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.0752923511691639,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/13107.png",
+  "venue": {
+    "id": 5679,
+    "name": "Estádio Proletário Guilherme da Silveira Filho",
+    "address": "Rua Sul América 950, Bangu",
+    "city": "Rio de Janeiro, Rio de Janeiro",
+    "capacity": 9564,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/5679.png"
+  },
+  "players": [
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13107-brunothiag",
+      "name": "Bruno Thiago Gomes de Lima",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9741.png"
+    },
+    {
+      "id": "13107-rafaelreis",
+      "name": "Rafael Reis",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/468160.png"
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13107-luizfelipe",
+      "name": "Luiz Felipe",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/198314.png"
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13107-carlosalbe",
+      "name": "Carlos Alberto Rogger Dias",
+      "age": 35,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/115709.png"
+    },
+    {
+      "id": "13107-alexmorett",
+      "name": "Alex Moretti",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/468159.png"
+    },
+    {
+      "id": "13107-bruninho",
+      "name": "Bruninho",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/468149.png"
+    },
+    {
+      "id": "13107-alex",
+      "name": "Alex",
+      "age": 35,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/469024.png"
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13107-walneyoliv",
+      "name": "Walney Oliveira Vieira",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/157839.png"
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-raianfaria",
+      "name": "Raian Faria Lourenço",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/283698.png"
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13107-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "5759",
+  "name": "Blankenberge",
+  "shortName": "BLA",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.9257435977557834,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/5759.png",
+  "venue": {
+    "id": 11661,
+    "name": "Bloso Park",
+    "address": "Koning Boudewijnlaan 15/B",
+    "city": "Blankenberge",
+    "capacity": 4000,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/11661.png"
+  },
+  "players": [
+    {
+      "id": "5759-bvandenbus",
+      "name": "B. Vandenbussche",
+      "age": 44,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/8659.png"
+    },
+    {
+      "id": "5759-giovannilo",
+      "name": "Giovanni Longueville",
+      "age": 31,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/283868.png"
+    },
+    {
+      "id": "5759-gvanhaecke",
+      "name": "G. Vanhaecke",
+      "age": 32,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/132251.png"
+    }
+  ]
+}

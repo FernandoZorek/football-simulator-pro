@@ -1,0 +1,256 @@
+{
+  "id": "1814",
+  "name": "Kindermann W",
+  "shortName": "KIN",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.9101110268905407,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1814.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "1814-quezia",
+      "name": "Quezia",
+      "age": 27,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77353.png"
+    },
+    {
+      "id": "1814-maike",
+      "name": "Maike",
+      "age": 32,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359177.png"
+    },
+    {
+      "id": "1814-simeia",
+      "name": "Siméia",
+      "age": 37,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77469.png"
+    },
+    {
+      "id": "1814-julia",
+      "name": "Júlia",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/462164.png"
+    },
+    {
+      "id": "1814-thaiane",
+      "name": "Thaiane",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359994.png"
+    },
+    {
+      "id": "1814-juliacipri",
+      "name": "Júlia Cipriani",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77282.png"
+    },
+    {
+      "id": "1814-mariaeduar",
+      "name": "Maria Eduarda",
+      "age": 18,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/483747.png"
+    },
+    {
+      "id": "1814-raquelsant",
+      "name": "Raquel Santiago",
+      "age": 38,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77537.png"
+    },
+    {
+      "id": "1814-kaila",
+      "name": "Kaila",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/409361.png"
+    },
+    {
+      "id": "1814-mlinares",
+      "name": "M. Linares",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/463934.png"
+    },
+    {
+      "id": "1814-daniventur",
+      "name": "Dani Venturini",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/360038.png"
+    },
+    {
+      "id": "1814-sramondegu",
+      "name": "S. Ramondegui",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/373601.png"
+    },
+    {
+      "id": "1814-raquelbeat",
+      "name": "Raquel Beatriz",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77336.png"
+    },
+    {
+      "id": "1814-michelle",
+      "name": "Michelle",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/359148.png"
+    },
+    {
+      "id": "1814-joycemanfi",
+      "name": "Joyce Manfio",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/409363.png"
+    },
+    {
+      "id": "1814-lgonzalez",
+      "name": "L. González",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/373556.png"
+    },
+    {
+      "id": "1814-kamila",
+      "name": "Kamila",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/359179.png"
+    },
+    {
+      "id": "1814-emilyn",
+      "name": "Emilyn",
+      "age": 18,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/483748.png"
+    },
+    {
+      "id": "1814-barbara",
+      "name": "Bárbara",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/409371.png"
+    },
+    {
+      "id": "1814-miriam",
+      "name": "Miriam",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77304.png"
+    },
+    {
+      "id": "1814-bruninha",
+      "name": "Bruninha",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77545.png"
+    },
+    {
+      "id": "1814-chaiane",
+      "name": "Chaiane",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/462166.png"
+    },
+    {
+      "id": "1814-brendhapat",
+      "name": "Brendha PatrÃ­cia",
+      "age": 22,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/409366.png"
+    }
+  ]
+}

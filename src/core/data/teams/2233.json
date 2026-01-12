@@ -1,0 +1,237 @@
+{
+  "id": "2233",
+  "name": "America-RN",
+  "shortName": "AME",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.163198317498974,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/2233.png",
+  "venue": {
+    "id": 207,
+    "name": "Arena das Dunas",
+    "address": "Avenida Senador Salgado Filho, Bairro Lagoa Nova",
+    "city": "Natal, Rio Grande do Norte",
+    "capacity": 42623,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/207.png"
+  },
+  "players": [
+    {
+      "id": "2233-lucao",
+      "name": "Lucao",
+      "age": 23,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588534.png"
+    },
+    {
+      "id": "2233-renan",
+      "name": "Renan",
+      "age": 28,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/54073.png"
+    },
+    {
+      "id": "2233-araujogabr",
+      "name": "Araujo Gabriel",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588535.png"
+    },
+    {
+      "id": "2233-paraibagui",
+      "name": "Paraiba Guilherme",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588536.png"
+    },
+    {
+      "id": "2233-heitor",
+      "name": "Heitor",
+      "age": 36,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/78024.png"
+    },
+    {
+      "id": "2233-lucasmende",
+      "name": "Lucas Mendes",
+      "age": 33,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9202.png"
+    },
+    {
+      "id": "2233-rodriguesl",
+      "name": "Rodrigues Lucas",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588537.png"
+    },
+    {
+      "id": "2233-rennansiqu",
+      "name": "Rennan Siqueira",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/159540.png"
+    },
+    {
+      "id": "2233-luzricardo",
+      "name": "Luz Ricardo",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588538.png"
+    },
+    {
+      "id": "2233-antonio",
+      "name": "Antonio",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588539.png"
+    },
+    {
+      "id": "2233-arua",
+      "name": "Arua",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/588540.png"
+    },
+    {
+      "id": "2233-figueiredo",
+      "name": "Figueiredo Dudu",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/588541.png"
+    },
+    {
+      "id": "2233-italomelo",
+      "name": "Ítalo Melo",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/78033.png"
+    },
+    {
+      "id": "2233-robson",
+      "name": "Robson",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/127149.png"
+    },
+    {
+      "id": "2233-romarinho",
+      "name": "Romarinho",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/159527.png"
+    },
+    {
+      "id": "2233-gabriellim",
+      "name": "Gabriel Lima",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/63997.png"
+    },
+    {
+      "id": "2233-giva",
+      "name": "Giva",
+      "age": 32,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77777.png"
+    },
+    {
+      "id": "2233-hebert",
+      "name": "Hebert",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/588542.png"
+    },
+    {
+      "id": "2233-henrique",
+      "name": "Henrique",
+      "age": 20,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/588543.png"
+    },
+    {
+      "id": "2233-salatiel",
+      "name": "Salatiel",
+      "age": 33,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/53995.png"
+    },
+    {
+      "id": "2233-thiaguinho",
+      "name": "Thiaguinho",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/238131.png"
+    }
+  ]
+}

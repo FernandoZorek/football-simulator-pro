@@ -1,0 +1,186 @@
+{
+  "id": "1811",
+  "name": "Santos W",
+  "shortName": "SAN",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.0527585071138263,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1811.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "1811-omcdaniel",
+      "name": "O. McDaniel",
+      "age": 28,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/352157.png"
+    },
+    {
+      "id": "1811-cida",
+      "name": "Cida",
+      "age": 39,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77460.png"
+    },
+    {
+      "id": "1811-rbonta",
+      "name": "R. Bonta",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/390077.png"
+    },
+    {
+      "id": "1811-kelly",
+      "name": "Kelly",
+      "age": 37,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77457.png"
+    },
+    {
+      "id": "1811-leidiane",
+      "name": "Leidiane",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77389.png"
+    },
+    {
+      "id": "1811-maryvenanc",
+      "name": "Mary Venâncio",
+      "age": 17,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/461928.png"
+    },
+    {
+      "id": "1811-larissavas",
+      "name": "Larissa Vasconcelos",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311460.png"
+    },
+    {
+      "id": "1811-ncharcopa",
+      "name": "N. Charcopa",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/295100.png"
+    },
+    {
+      "id": "1811-nathpitbul",
+      "name": "Nath Pitbull",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77443.png"
+    },
+    {
+      "id": "1811-camile",
+      "name": "Camile",
+      "age": 17,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/467657.png"
+    },
+    {
+      "id": "1811-gabilevequ",
+      "name": "Gabi Leveque",
+      "age": 19,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/466784.png"
+    },
+    {
+      "id": "1811-thaisinha",
+      "name": "Thaisinha",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/200063.png"
+    },
+    {
+      "id": "1811-carolbaian",
+      "name": "Carol Baiana",
+      "age": 30,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/87480.png"
+    },
+    {
+      "id": "1811-ketlen",
+      "name": "Ketlen",
+      "age": 32,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77574.png"
+    },
+    {
+      "id": "1811-nathane",
+      "name": "Nathane",
+      "age": 34,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77222.png"
+    },
+    {
+      "id": "1811-carollara",
+      "name": "Carol Lara",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/464029.png"
+    }
+  ]
+}

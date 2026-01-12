@@ -1,0 +1,239 @@
+{
+  "id": "13134",
+  "name": "Capital",
+  "shortName": "CAP",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.9848505020290468,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/13134.png",
+  "venue": {
+    "id": 257,
+    "name": "Estádio Municipal Nílton Santos",
+    "address": "Avenida Teotônio Segurado",
+    "city": "Palmas, Tocantins",
+    "capacity": 12000,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/257.png"
+  },
+  "players": [
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-matheus",
+      "name": "Matheus",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/472871.png"
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-paulomiran",
+      "name": "Paulo Miranda",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/340935.png"
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "13134-phedroluca",
+      "name": "Phedro Lucas",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/457951.png"
+    },
+    {
+      "id": "13134-jhonatalim",
+      "name": "Jhonata Lima",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/237615.png"
+    },
+    {
+      "id": "13134-luanderson",
+      "name": "Luanderson",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/319206.png"
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "13134-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "id": "10679",
+  "name": "Real Noroeste",
+  "shortName": "REA",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.9754034156861134,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/10679.png",
+  "venue": {
+    "id": 7315,
+    "name": "Estádio José Olímpio da Rocha",
+    "address": "Rua Henrique Santana, Bairro Córrego do Café",
+    "city": "Águia Branca, Espírito Santo",
+    "capacity": 4000,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/7315.png"
+  },
+  "players": [
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-gustavoeli",
+      "name": "Gustavo Elias Nascimento Silva Chaves",
+      "age": 24,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/291920.png"
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-patrickdeo",
+      "name": "Patrick de Oliveira Ramos",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/41852.png"
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-lucasneres",
+      "name": "Lucas Neres",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/200296.png"
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-ryan",
+      "name": "Ryan",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/424196.png"
+    },
+    {
+      "id": "10679-distefano",
+      "name": "Di Stefano",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/423558.png"
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-victorsalv",
+      "name": "Victor Salvador",
+      "age": 31,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/55125.png"
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "10679-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    }
+  ]
+}

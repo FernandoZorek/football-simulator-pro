@@ -1,0 +1,324 @@
+{
+  "id": "12925",
+  "name": "Real FC",
+  "shortName": "REA",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.880917871104472,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/12925.png",
+  "venue": {
+    "id": 8254,
+    "name": "Estádio Vasco Viana de Andrade",
+    "address": "Rua Cinco",
+    "city": "Núcleo Bandeirante, Distrito Federal",
+    "capacity": 3000,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/8254.png"
+  },
+  "players": [
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-franciscop",
+      "name": "Francisco Pereira de Freitas Junior",
+      "age": 33,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/43960.png"
+    },
+    {
+      "id": "12925-leonardolo",
+      "name": "Leonardo Lovo Teles",
+      "age": 22,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/315960.png"
+    },
+    {
+      "id": "12925-caiomendes",
+      "name": "Caio Mendes",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/457913.png"
+    },
+    {
+      "id": "12925-maycon",
+      "name": "Maycon",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/457910.png"
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-davisilva",
+      "name": "Davi Silva",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/457915.png"
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-paulovicto",
+      "name": "Paulo Victor",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/473322.png"
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-rafaelmiya",
+      "name": "Rafael Miyasaki",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/310668.png"
+    },
+    {
+      "id": "12925-mnewberry",
+      "name": "M. Newberry",
+      "age": 28,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/61513.png"
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "12925-arthurgabr",
+      "name": "Arthur Gabriel",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/457926.png"
+    }
+  ]
+}

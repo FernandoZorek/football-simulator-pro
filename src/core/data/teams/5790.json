@@ -1,0 +1,307 @@
+{
+  "id": "5790",
+  "name": "Elene-Grotenberge",
+  "shortName": "ELE",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.9671595800455387,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/5790.png",
+  "venue": {
+    "id": 4299,
+    "name": "Terrain Grotenberge",
+    "address": "Gentse Steenweg 103-137",
+    "city": "Grotenberge",
+    "capacity": 1000,
+    "surface": "artificial turf",
+    "image": "https://media.api-sports.io/football/venues/4299.png"
+  },
+  "players": [
+    {
+      "id": "5790-mdegroote",
+      "name": "M. De Groote",
+      "age": 22,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/439410.png"
+    },
+    {
+      "id": "5790-jengelbinc",
+      "name": "J. Engelbinck",
+      "age": 26,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/136209.png"
+    },
+    {
+      "id": "5790-robvanopde",
+      "name": "Rob Van Opdenbosch",
+      "age": 25,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/131644.png"
+    },
+    {
+      "id": "5790-kdejonghe",
+      "name": "K. De Jonghe",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/337770.png"
+    },
+    {
+      "id": "5790-jarideroov",
+      "name": "Jari De Roover",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/208914.png"
+    },
+    {
+      "id": "5790-jdenis",
+      "name": "J. Denis",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/283892.png"
+    },
+    {
+      "id": "5790-smertens",
+      "name": "S. Mertens",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/283717.png"
+    },
+    {
+      "id": "5790-ysompel",
+      "name": "Y. Sompel",
+      "age": 32,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/439391.png"
+    },
+    {
+      "id": "5790-lvandersyp",
+      "name": "L. Van Der Sypt",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/136206.png"
+    },
+    {
+      "id": "5790-karelvanli",
+      "name": "Karel Van Lierde",
+      "age": 34,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/116055.png"
+    },
+    {
+      "id": "5790-bvermeer",
+      "name": "B. Vermeer",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/439405.png"
+    },
+    {
+      "id": "5790-ldeguchten",
+      "name": "L. De Guchteneire",
+      "age": 35,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439516.png"
+    },
+    {
+      "id": "5790-amarildogj",
+      "name": "Amarildo Gjokaj",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/132422.png"
+    },
+    {
+      "id": "5790-igroenez",
+      "name": "I. Groenez",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439411.png"
+    },
+    {
+      "id": "5790-jhellinckx",
+      "name": "J. Hellinckx",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/283732.png"
+    },
+    {
+      "id": "5790-kmerckaert",
+      "name": "K. Merckaert",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439390.png"
+    },
+    {
+      "id": "5790-eokitakula",
+      "name": "E. Okitakula",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439387.png"
+    },
+    {
+      "id": "5790-rtack",
+      "name": "R. Tack",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439388.png"
+    },
+    {
+      "id": "5790-brechtvanc",
+      "name": "Brecht Van Cauwenberge",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439517.png"
+    },
+    {
+      "id": "5790-aschoors",
+      "name": "A. Schoors",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/149517.png"
+    },
+    {
+      "id": "5790-shawnbeeck",
+      "name": "Shawn Beeckaert",
+      "age": 26,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/136214.png"
+    },
+    {
+      "id": "5790-rbenahmed",
+      "name": "R. Ben Ahmed",
+      "age": 36,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/132158.png"
+    },
+    {
+      "id": "5790-kevindehas",
+      "name": "Kevin De Haspe",
+      "age": 28,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/132311.png"
+    },
+    {
+      "id": "5790-vdeleenhee",
+      "name": "V. Deleenheer",
+      "age": 34,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439386.png"
+    },
+    {
+      "id": "5790-rlufira",
+      "name": "R. Lufira",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439389.png"
+    },
+    {
+      "id": "5790-domiensche",
+      "name": "Domien Schelstraete",
+      "age": 30,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/132306.png"
+    },
+    {
+      "id": "5790-mtraore",
+      "name": "M. Traoré",
+      "age": 22,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439407.png"
+    },
+    {
+      "id": "5790-fvandendri",
+      "name": "F. Vandendriessche",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/439406.png"
+    }
+  ]
+}

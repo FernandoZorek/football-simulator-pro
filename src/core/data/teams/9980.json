@@ -1,0 +1,316 @@
+{
+  "id": "9980",
+  "name": "Cruzeiro W",
+  "shortName": "CRU",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.146567971564696,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/9980.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "9980-tatyamaro",
+      "name": "Taty Amaro",
+      "age": 29,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77528.png"
+    },
+    {
+      "id": "9980-leilane",
+      "name": "Leilane",
+      "age": 19,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/332874.png"
+    },
+    {
+      "id": "9980-camilarodr",
+      "name": "Camila Rodrigues",
+      "age": 24,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/200037.png"
+    },
+    {
+      "id": "9980-clara",
+      "name": "Clara",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311455.png"
+    },
+    {
+      "id": "9980-giovanna",
+      "name": "Giovanna",
+      "age": 32,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/200030.png"
+    },
+    {
+      "id": "9980-vitoriacal",
+      "name": "Vitória Calhau",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/119257.png"
+    },
+    {
+      "id": "9980-isahaas",
+      "name": "Isa Haas",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/99906.png"
+    },
+    {
+      "id": "9980-rebeca",
+      "name": "Rebeca",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/393702.png"
+    },
+    {
+      "id": "9980-layza",
+      "name": "Layza",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/409686.png"
+    },
+    {
+      "id": "9980-palomamaci",
+      "name": "Paloma Maciel",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/409239.png"
+    },
+    {
+      "id": "9980-letaciaalv",
+      "name": "LetÃ­cia Alves",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311464.png"
+    },
+    {
+      "id": "9980-belinha",
+      "name": "Belinha",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/125761.png"
+    },
+    {
+      "id": "9980-gisseli",
+      "name": "Gisseli",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/200006.png"
+    },
+    {
+      "id": "9980-lfretes",
+      "name": "L. Fretes",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/321915.png"
+    },
+    {
+      "id": "9980-camilaambr",
+      "name": "Camila Ambrózio",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/198153.png"
+    },
+    {
+      "id": "9980-gabysoares",
+      "name": "Gaby Soares",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77228.png"
+    },
+    {
+      "id": "9980-lbedoya",
+      "name": "L. Bedoya",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/195735.png"
+    },
+    {
+      "id": "9980-tauanezoio",
+      "name": "Tauane Zóio",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77281.png"
+    },
+    {
+      "id": "9980-priback",
+      "name": "Pri Back",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/199991.png"
+    },
+    {
+      "id": "9980-maralia",
+      "name": "MarÃ­lia",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/199972.png"
+    },
+    {
+      "id": "9980-grodraguez",
+      "name": "G. RodrÃ­guez",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/322382.png"
+    },
+    {
+      "id": "9980-vanessa",
+      "name": "Vanessa",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/198152.png"
+    },
+    {
+      "id": "9980-cayala",
+      "name": "C. Ayala",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/311608.png"
+    },
+    {
+      "id": "9980-fsandoval",
+      "name": "F. Sandoval",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/314179.png"
+    },
+    {
+      "id": "9980-landrade",
+      "name": "L. Andrade",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/148033.png"
+    },
+    {
+      "id": "9980-miria",
+      "name": "MiriÃ£",
+      "age": 26,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/198161.png"
+    },
+    {
+      "id": "9980-patraciaso",
+      "name": "PatrÃ­cia Sochor",
+      "age": 30,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77213.png"
+    },
+    {
+      "id": "9980-letaciamor",
+      "name": "LetÃ­cia Moreno",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/329146.png"
+    },
+    {
+      "id": "9980-byancabras",
+      "name": "Byanca Brasil",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/197914.png"
+    }
+  ]
+}

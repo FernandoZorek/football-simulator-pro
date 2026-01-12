@@ -1,0 +1,197 @@
+{
+  "id": "5787",
+  "name": "Eendracht Wervik",
+  "shortName": "EEN",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.7980632683399982,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/5787.png",
+  "venue": {
+    "id": 4296,
+    "name": "Stadion De Pionier",
+    "address": "Gosserieslaan 17 / Virivioslaan 17",
+    "city": "Wervik",
+    "capacity": 500,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/4296.png"
+  },
+  "players": [
+    {
+      "id": "5787-tdebuyck",
+      "name": "T. Debuyck",
+      "age": 28,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177118.png"
+    },
+    {
+      "id": "5787-cdescamps",
+      "name": "C. Descamps",
+      "age": 44,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177119.png"
+    },
+    {
+      "id": "5787-ovancoilli",
+      "name": "O. Vancoillie",
+      "age": 29,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177120.png"
+    },
+    {
+      "id": "5787-fcalu",
+      "name": "F. Calu",
+      "age": 39,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177121.png"
+    },
+    {
+      "id": "5787-ffleurman",
+      "name": "F. Fleurman",
+      "age": 43,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177122.png"
+    },
+    {
+      "id": "5787-jpante",
+      "name": "J. Pante",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177123.png"
+    },
+    {
+      "id": "5787-kvoet",
+      "name": "K. Voet",
+      "age": 34,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177124.png"
+    },
+    {
+      "id": "5787-bgekiere",
+      "name": "B. Gekiere",
+      "age": 43,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177125.png"
+    },
+    {
+      "id": "5787-tlambrecht",
+      "name": "T. Lambrecht",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177126.png"
+    },
+    {
+      "id": "5787-tbogaerde",
+      "name": "T. Bogaerde",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177127.png"
+    },
+    {
+      "id": "5787-mvermeersc",
+      "name": "M. Vermeersch",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/177128.png"
+    },
+    {
+      "id": "5787-bverstraet",
+      "name": "B. Verstraete",
+      "age": 35,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/177129.png"
+    },
+    {
+      "id": "5787-rwoodruff",
+      "name": "R. Woodruff",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/177130.png"
+    },
+    {
+      "id": "5787-tbouchart",
+      "name": "T. Bouchart",
+      "age": 41,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/177131.png"
+    },
+    {
+      "id": "5787-jdutoit",
+      "name": "J. Dutoit",
+      "age": 35,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/177132.png"
+    },
+    {
+      "id": "5787-jpopelier",
+      "name": "J. Popelier",
+      "age": 34,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/177133.png"
+    },
+    {
+      "id": "5787-kvandeputt",
+      "name": "K. Vandeputte",
+      "age": 30,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/177134.png"
+    }
+  ]
+}

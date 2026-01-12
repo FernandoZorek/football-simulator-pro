@@ -1,0 +1,356 @@
+{
+  "id": "3826",
+  "name": "Internacional RS W",
+  "shortName": "INT",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.0071810554822012,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/3826.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "3826-camilly",
+      "name": "Camilly",
+      "age": 18,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/474488.png"
+    },
+    {
+      "id": "3826-taina",
+      "name": "Tainá",
+      "age": 21,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/199611.png"
+    },
+    {
+      "id": "3826-mayara",
+      "name": "Mayara",
+      "age": 23,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/199626.png"
+    },
+    {
+      "id": "3826-mariribeir",
+      "name": "Mari Ribeiro",
+      "age": 19,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/393786.png"
+    },
+    {
+      "id": "3826-barbara",
+      "name": "Bárbara",
+      "age": 36,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/68730.png"
+    },
+    {
+      "id": "3826-biamartins",
+      "name": "Bia Martins",
+      "age": 18,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/468269.png"
+    },
+    {
+      "id": "3826-sabrinakat",
+      "name": "Sabrina Kathleen",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/468943.png"
+    },
+    {
+      "id": "3826-myka",
+      "name": "Myka",
+      "age": 18,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/393775.png"
+    },
+    {
+      "id": "3826-brunabenit",
+      "name": "Bruna Benites",
+      "age": 39,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/199990.png"
+    },
+    {
+      "id": "3826-eskerdinha",
+      "name": "Eskerdinha",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/198160.png"
+    },
+    {
+      "id": "3826-thaini",
+      "name": "Thaini",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77342.png"
+    },
+    {
+      "id": "3826-slacoste",
+      "name": "S. Lacoste",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/335831.png"
+    },
+    {
+      "id": "3826-leticiadeb",
+      "name": "Letícia Debiasi",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/463273.png"
+    },
+    {
+      "id": "3826-gisantos",
+      "name": "Gi Santos",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/329112.png"
+    },
+    {
+      "id": "3826-lorranny",
+      "name": "Lorranny",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/443978.png"
+    },
+    {
+      "id": "3826-katrinecos",
+      "name": "Katrine Costa",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/199989.png"
+    },
+    {
+      "id": "3826-patillanos",
+      "name": "Pati Llanos",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/274941.png"
+    },
+    {
+      "id": "3826-sarinha",
+      "name": "Sarinha",
+      "age": 18,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/519197.png"
+    },
+    {
+      "id": "3826-mayara",
+      "name": "Mayara",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77260.png"
+    },
+    {
+      "id": "3826-ketlin",
+      "name": "Ketlin",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/417572.png"
+    },
+    {
+      "id": "3826-dannyteixe",
+      "name": "Danny Teixeira",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/379964.png"
+    },
+    {
+      "id": "3826-juliabianc",
+      "name": "Julia Bianchi",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77468.png"
+    },
+    {
+      "id": "3826-marzia",
+      "name": "Marzia",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/409223.png"
+    },
+    {
+      "id": "3826-jordana",
+      "name": "Jordana",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/311615.png"
+    },
+    {
+      "id": "3826-isabelacap",
+      "name": "Isabela Capelinha",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/198163.png"
+    },
+    {
+      "id": "3826-gabimorais",
+      "name": "Gabi Morais",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/102318.png"
+    },
+    {
+      "id": "3826-stephanie",
+      "name": "Stephanie",
+      "age": 17,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/462542.png"
+    },
+    {
+      "id": "3826-baquino",
+      "name": "B. Aquino",
+      "age": 22,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/335822.png"
+    },
+    {
+      "id": "3826-cguell",
+      "name": "C. Güell",
+      "age": 18,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/466137.png"
+    },
+    {
+      "id": "3826-paola",
+      "name": "Paola",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/411869.png"
+    },
+    {
+      "id": "3826-rafamineir",
+      "name": "Rafa Mineira",
+      "age": 30,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77261.png"
+    },
+    {
+      "id": "3826-annycaroli",
+      "name": "Anny Caroline",
+      "age": 22,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/359161.png"
+    },
+    {
+      "id": "3826-jmorales",
+      "name": "J. Morales",
+      "age": 19,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/472835.png"
+    }
+  ]
+}

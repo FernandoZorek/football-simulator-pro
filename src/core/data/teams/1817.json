@@ -1,0 +1,336 @@
+{
+  "id": "1817",
+  "name": "Gremio W",
+  "shortName": "GRE",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.1487198487997015,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1817.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "1817-suelanefro",
+      "name": "Suelane Frota",
+      "age": 26,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77481.png"
+    },
+    {
+      "id": "1817-raassatayn",
+      "name": "RaÃ­ssa Tayná",
+      "age": 33,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/118986.png"
+    },
+    {
+      "id": "1817-leticiarod",
+      "name": "Leticia Rodrigues",
+      "age": 28,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359186.png"
+    },
+    {
+      "id": "1817-raissabahi",
+      "name": "Raissa Bahia",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359997.png"
+    },
+    {
+      "id": "1817-tayla",
+      "name": "Tayla",
+      "age": 32,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/68737.png"
+    },
+    {
+      "id": "1817-stephanieb",
+      "name": "Stephanie Brito",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/374573.png"
+    },
+    {
+      "id": "1817-karolarcan",
+      "name": "Karol Arcanjo",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311623.png"
+    },
+    {
+      "id": "1817-emille",
+      "name": "Emille",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/515942.png"
+    },
+    {
+      "id": "1817-danibarao",
+      "name": "Dani BarÃ£o",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/362463.png"
+    },
+    {
+      "id": "1817-dudinha",
+      "name": "Dudinha",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/464045.png"
+    },
+    {
+      "id": "1817-jpena",
+      "name": "J. Peña",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/322565.png"
+    },
+    {
+      "id": "1817-dmontoya",
+      "name": "D. Montoya",
+      "age": 35,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/302587.png"
+    },
+    {
+      "id": "1817-luanaspind",
+      "name": "Luana Spindler",
+      "age": 33,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77312.png"
+    },
+    {
+      "id": "1817-camilapini",
+      "name": "Camila Pini",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77193.png"
+    },
+    {
+      "id": "1817-amanda",
+      "name": "Amanda",
+      "age": 31,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77329.png"
+    },
+    {
+      "id": "1817-drika",
+      "name": "Drika",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/461931.png"
+    },
+    {
+      "id": "1817-mbarros",
+      "name": "M. Barros",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/394031.png"
+    },
+    {
+      "id": "1817-mramos",
+      "name": "M. Ramos",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/322564.png"
+    },
+    {
+      "id": "1817-shasha",
+      "name": "Shashá",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77238.png"
+    },
+    {
+      "id": "1817-biasantos",
+      "name": "Bia Santos",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/465039.png"
+    },
+    {
+      "id": "1817-giovanamar",
+      "name": "Giovana Marcelino",
+      "age": 22,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77216.png"
+    },
+    {
+      "id": "1817-brenda",
+      "name": "Brenda",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77404.png"
+    },
+    {
+      "id": "1817-katielle",
+      "name": "Katielle",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77214.png"
+    },
+    {
+      "id": "1817-valeria",
+      "name": "Valéria",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/462162.png"
+    },
+    {
+      "id": "1817-yrodraguez",
+      "name": "Y. RodrÃ­guez",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/68916.png"
+    },
+    {
+      "id": "1817-giselevale",
+      "name": "Gisele Vale",
+      "age": 17,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/462477.png"
+    },
+    {
+      "id": "1817-krestrepo",
+      "name": "K. Restrepo",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/356149.png"
+    },
+    {
+      "id": "1817-vick",
+      "name": "Vick",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/518264.png"
+    },
+    {
+      "id": "1817-juliamarti",
+      "name": "Júlia Martins",
+      "age": 18,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/515943.png"
+    },
+    {
+      "id": "1817-mariadias",
+      "name": "Maria Dias",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77350.png"
+    },
+    {
+      "id": "1817-mariasanto",
+      "name": "Maria Santos",
+      "age": 15,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/496396.png"
+    }
+  ]
+}

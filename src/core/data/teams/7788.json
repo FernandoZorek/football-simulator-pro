@@ -1,0 +1,287 @@
+{
+  "id": "7788",
+  "name": "União Rondonópolis",
+  "shortName": "UNI",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.1036233404865068,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/7788.png",
+  "venue": {
+    "id": 5640,
+    "name": "Estádio Municipal Engenheiro Luthero Lopes",
+    "address": "Avenida Bandeirantes, Bairro Centro",
+    "city": "Rondonópolis, Mato Grosso",
+    "capacity": 18720,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/5640.png"
+  },
+  "players": [
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "7788-fernando",
+      "name": "Fernando",
+      "age": 35,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/157538.png"
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "7788-arthuramor",
+      "name": "Arthur Amorim",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/367545.png"
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "7788-iurycabral",
+      "name": "Iury Cabral",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/287847.png"
+    },
+    {
+      "id": "7788-miguel",
+      "name": "Miguel",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/197528.png"
+    },
+    {
+      "id": "7788-nathan",
+      "name": "Nathan",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/316967.png"
+    },
+    {
+      "id": "7788-davi",
+      "name": "Davi",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/506450.png"
+    },
+    {
+      "id": "7788-gutti",
+      "name": "Gutti",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54376.png"
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "7788-gabrielsan",
+      "name": "Gabriel Santana",
+      "age": 18,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/506451.png"
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "7788-joel",
+      "name": "Joel",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/237982.png"
+    },
+    {
+      "id": "7788-luizgabrie",
+      "name": "Luiz Gabriel",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/408522.png"
+    },
+    {
+      "id": "7788-gionnotti",
+      "name": "Gionnotti",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/299079.png"
+    },
+    {
+      "id": "7788-joseiksonm",
+      "name": "José Ikson Miguel do Nascimento Silva",
+      "age": 28,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/160337.png"
+    },
+    {
+      "id": "7788-gabrielrod",
+      "name": "Gabriel Rodrigues da Silva",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/134688.png"
+    },
+    {
+      "id": "7788-arthurguil",
+      "name": "Arthur Guilherme",
+      "age": 23,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/512121.png"
+    },
+    {
+      "id": "7788-vitor",
+      "name": "Vitor",
+      "age": 18,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/474598.png"
+    },
+    {
+      "id": "7788-lucashenri",
+      "name": "Lucas Henrique dos Santos",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/280741.png"
+    },
+    {
+      "id": "7788-italotanqu",
+      "name": "Italo Tanque",
+      "age": 29,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/454792.png"
+    },
+    {
+      "id": "7788-gvenuti",
+      "name": "G. Venuti",
+      "age": 16,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "74-2024",
+  "name": "Campeonato Brasileiro Série D",
+  "season": "2024",
+  "type": "copa",
+  "teamIds": [
+    "1794",
+    "1798",
+    "1802",
+    "1811",
+    "1814",
+    "1817",
+    "3826",
+    "9980"
+  ],
+  "settings": {
+    "pointsWin": 3,
+    "pointsDraw": 1,
+    "hasPlayoffs": false
+  }
+}

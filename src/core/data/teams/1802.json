@@ -1,0 +1,306 @@
+{
+  "id": "1802",
+  "name": "America Mineiro W",
+  "shortName": "AME",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.0053747227834917,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1802.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "1802-laisla",
+      "name": "Laisla",
+      "age": 21,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/519840.png"
+    },
+    {
+      "id": "1802-taina",
+      "name": "Tainá",
+      "age": 30,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77429.png"
+    },
+    {
+      "id": "1802-sandy",
+      "name": "Sandy",
+      "age": 25,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/518262.png"
+    },
+    {
+      "id": "1802-keka",
+      "name": "Keka",
+      "age": 27,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359174.png"
+    },
+    {
+      "id": "1802-taluane",
+      "name": "Taluane",
+      "age": 26,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/409687.png"
+    },
+    {
+      "id": "1802-mimi",
+      "name": "Mimi",
+      "age": 34,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77573.png"
+    },
+    {
+      "id": "1802-sassa",
+      "name": "Sassá",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311617.png"
+    },
+    {
+      "id": "1802-maiara",
+      "name": "Maiara",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/206322.png"
+    },
+    {
+      "id": "1802-radija",
+      "name": "Radija",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359197.png"
+    },
+    {
+      "id": "1802-anaclara",
+      "name": "Ana Clara",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/275100.png"
+    },
+    {
+      "id": "1802-vitoriakaa",
+      "name": "Vitória KaÃ­ssa",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/198232.png"
+    },
+    {
+      "id": "1802-dayse",
+      "name": "Dayse",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/483840.png"
+    },
+    {
+      "id": "1802-laasgiacom",
+      "name": "LaÃ­s Giacomel",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/314180.png"
+    },
+    {
+      "id": "1802-jajaamorim",
+      "name": "Jajá Amorim",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/198158.png"
+    },
+    {
+      "id": "1802-maisa",
+      "name": "Maísa",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/200023.png"
+    },
+    {
+      "id": "1802-ilana",
+      "name": "Ilana",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77551.png"
+    },
+    {
+      "id": "1802-anagraziel",
+      "name": "Ana Grazielle",
+      "age": 19,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/520801.png"
+    },
+    {
+      "id": "1802-anaclara",
+      "name": "Ana Clara",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/311624.png"
+    },
+    {
+      "id": "1802-luaninha",
+      "name": "Luaninha",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/273269.png"
+    },
+    {
+      "id": "1802-anaflavia",
+      "name": "Ana Flávia",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/462161.png"
+    },
+    {
+      "id": "1802-rafalevis",
+      "name": "Rafa Levis",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/206323.png"
+    },
+    {
+      "id": "1802-earias",
+      "name": "E. Arias",
+      "age": 20,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/295081.png"
+    },
+    {
+      "id": "1802-evelyngadu",
+      "name": "Evelyn Gadu",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77436.png"
+    },
+    {
+      "id": "1802-pimenta",
+      "name": "Pimenta",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/360035.png"
+    },
+    {
+      "id": "1802-iara",
+      "name": "Iara",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/276614.png"
+    },
+    {
+      "id": "1802-thayna",
+      "name": "Thayna",
+      "age": 21,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/312212.png"
+    },
+    {
+      "id": "1802-marianafau",
+      "name": "Mariana Fausto",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/359201.png"
+    },
+    {
+      "id": "1802-soraya",
+      "name": "Soraya",
+      "age": 28,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/197810.png"
+    }
+  ]
+}

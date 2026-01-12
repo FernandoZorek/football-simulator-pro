@@ -1,0 +1,456 @@
+{
+  "id": "10673",
+  "name": "Cascavel",
+  "shortName": "CAS",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 1.0866361954942767,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/10673.png",
+  "venue": {
+    "id": 20766,
+    "name": "Estádio Olímpico Regional Jacy Miguel Scanagatta",
+    "address": "Rua Chaparral",
+    "city": "Cascavel, Paraná",
+    "capacity": 42350,
+    "surface": "grass",
+    "image": "https://media.api-sports.io/football/venues/20766.png"
+  },
+  "players": [
+    {
+      "id": "10673-thiagogonc",
+      "name": "Thiago Gonçalves",
+      "age": 24,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/55173.png"
+    },
+    {
+      "id": "10673-jeancarlos",
+      "name": "Jean Carlos",
+      "age": 31,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/368302.png"
+    },
+    {
+      "id": "10673-passarelli",
+      "name": "Passarelli",
+      "age": 29,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9735.png"
+    },
+    {
+      "id": "10673-santos",
+      "name": "Santos",
+      "age": 20,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/513598.png"
+    },
+    {
+      "id": "10673-diego",
+      "name": "Diego",
+      "age": 18,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false
+    },
+    {
+      "id": "10673-paulovicto",
+      "name": "Paulo Victor",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/197022.png"
+    },
+    {
+      "id": "10673-taison",
+      "name": "Taison",
+      "age": 33,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/235522.png"
+    },
+    {
+      "id": "10673-guga",
+      "name": "Guga",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/237836.png"
+    },
+    {
+      "id": "10673-brunodip",
+      "name": "Bruno Dip",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/68059.png"
+    },
+    {
+      "id": "10673-vitordadal",
+      "name": "Vitor Dadalt",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/281868.png"
+    },
+    {
+      "id": "10673-lucasseraf",
+      "name": "Lucas Serafini",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/208787.png"
+    },
+    {
+      "id": "10673-antony",
+      "name": "Antony",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/454685.png"
+    },
+    {
+      "id": "10673-guilhermel",
+      "name": "Guilherme Lacerda",
+      "age": 25,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/237975.png"
+    },
+    {
+      "id": "10673-libano",
+      "name": "Libano",
+      "age": 36,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/234417.png"
+    },
+    {
+      "id": "10673-felix",
+      "name": "Félix",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/306809.png"
+    },
+    {
+      "id": "10673-gustavo",
+      "name": "Gustavo",
+      "age": 19,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/521952.png"
+    },
+    {
+      "id": "10673-jonathansc",
+      "name": "Jonathan Schuttz Flores",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/278333.png"
+    },
+    {
+      "id": "10673-renan",
+      "name": "Renan",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/405931.png"
+    },
+    {
+      "id": "10673-flavioramo",
+      "name": "Flávio Ramos",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/41490.png"
+    },
+    {
+      "id": "10673-geovane",
+      "name": "Geovane",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/9349.png"
+    },
+    {
+      "id": "10673-brunofelip",
+      "name": "Bruno Felipe",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/280536.png"
+    },
+    {
+      "id": "10673-nikollas",
+      "name": "Nikollas",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/287849.png"
+    },
+    {
+      "id": "10673-lucasloure",
+      "name": "Lucas Lourenço",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/180371.png"
+    },
+    {
+      "id": "10673-brener",
+      "name": "Brener",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/299109.png"
+    },
+    {
+      "id": "10673-kauhegaldi",
+      "name": "Kauhe Galdino",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/505571.png"
+    },
+    {
+      "id": "10673-pecanha",
+      "name": "Peçanha",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/402672.png"
+    },
+    {
+      "id": "10673-samuel",
+      "name": "Samuel",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/402404.png"
+    },
+    {
+      "id": "10673-garraty",
+      "name": "Garraty",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/195592.png"
+    },
+    {
+      "id": "10673-joaopedro",
+      "name": "João Pedro",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/9433.png"
+    },
+    {
+      "id": "10673-lucasaugus",
+      "name": "Lucas Augusto",
+      "age": 22,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/461294.png"
+    },
+    {
+      "id": "10673-robinho",
+      "name": "Robinho",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/9495.png"
+    },
+    {
+      "id": "10673-wesleyhuds",
+      "name": "Wesley Hudson",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/291767.png"
+    },
+    {
+      "id": "10673-lucas",
+      "name": "Lucas",
+      "age": 28,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/145528.png"
+    },
+    {
+      "id": "10673-guivieira",
+      "name": "Gui Vieira",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/351521.png"
+    },
+    {
+      "id": "10673-thiagoluba",
+      "name": "Thiago Lubatchewsky Júnior",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/401473.png"
+    },
+    {
+      "id": "10673-diegocardo",
+      "name": "Diego Cardoso",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/9757.png"
+    },
+    {
+      "id": "10673-negueba",
+      "name": "Negueba",
+      "age": 19,
+      "position": "ST",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/453489.png"
+    },
+    {
+      "id": "10673-amolinas",
+      "name": "A. Molinas",
+      "age": 23,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/407111.png"
+    },
+    {
+      "id": "10673-luisaraujo",
+      "name": "Luís Araújo",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/279023.png"
+    },
+    {
+      "id": "10673-richard",
+      "name": "Richard",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/371886.png"
+    },
+    {
+      "id": "10673-viniciusmo",
+      "name": "Vinicius Moura",
+      "age": 27,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/303265.png"
+    },
+    {
+      "id": "10673-marcao",
+      "name": "Marcão",
+      "age": 40,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77737.png"
+    },
+    {
+      "id": "10673-michel",
+      "name": "Michel",
+      "age": 36,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77880.png"
+    }
+  ]
+}

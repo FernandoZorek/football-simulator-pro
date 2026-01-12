@@ -1,0 +1,505 @@
+{
+  "id": "18308",
+  "name": "Manauara",
+  "shortName": "MAN",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.7795015252030556,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/18308.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "18308-marlon",
+      "name": "Marlon",
+      "age": 25,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/69186.png"
+    },
+    {
+      "id": "18308-gabrielfel",
+      "name": "Gabriel Félix",
+      "age": 30,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/10546.png"
+    },
+    {
+      "id": "18308-gleibson",
+      "name": "Gleibson",
+      "age": 38,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/54562.png"
+    },
+    {
+      "id": "18308-welysonfel",
+      "name": "Welyson Felipe",
+      "age": 20,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/316024.png"
+    },
+    {
+      "id": "18308-cleriston",
+      "name": "Cleriston",
+      "age": 33,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/9590.png"
+    },
+    {
+      "id": "18308-david",
+      "name": "David",
+      "age": 30,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/78050.png"
+    },
+    {
+      "id": "18308-patricio",
+      "name": "Patricio",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/404402.png"
+    },
+    {
+      "id": "18308-ryan",
+      "name": "Ryan",
+      "age": 24,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/305037.png"
+    },
+    {
+      "id": "18308-luisphelip",
+      "name": "Luis Phelipe",
+      "age": 26,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/237822.png"
+    },
+    {
+      "id": "18308-vitinho",
+      "name": "Vitinho",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/157715.png"
+    },
+    {
+      "id": "18308-allefe",
+      "name": "Állefe",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/197433.png"
+    },
+    {
+      "id": "18308-paulinho",
+      "name": "Paulinho",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/197055.png"
+    },
+    {
+      "id": "18308-geninho",
+      "name": "Geninho",
+      "age": 32,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/67228.png"
+    },
+    {
+      "id": "18308-diegocleme",
+      "name": "Diego Clemente",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/197070.png"
+    },
+    {
+      "id": "18308-wesley",
+      "name": "Wesley",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/303971.png"
+    },
+    {
+      "id": "18308-caioribeir",
+      "name": "Caio Ribeiro",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54136.png"
+    },
+    {
+      "id": "18308-eversonbis",
+      "name": "Éverson Bispo Pereira",
+      "age": 28,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/10014.png"
+    },
+    {
+      "id": "18308-guilhermem",
+      "name": "Guilherme Moller",
+      "age": 33,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54776.png"
+    },
+    {
+      "id": "18308-joseleandr",
+      "name": "José Leandro",
+      "age": 27,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/317053.png"
+    },
+    {
+      "id": "18308-gilba",
+      "name": "Gilba",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/237940.png"
+    },
+    {
+      "id": "18308-cuadrado",
+      "name": "Cuadrado",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/307237.png"
+    },
+    {
+      "id": "18308-danielneto",
+      "name": "Daniel Neto",
+      "age": 17,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/513600.png"
+    },
+    {
+      "id": "18308-pablosilva",
+      "name": "Pablo Silva",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/9579.png"
+    },
+    {
+      "id": "18308-davidpenin",
+      "name": "David Peninha",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54737.png"
+    },
+    {
+      "id": "18308-pedrocolin",
+      "name": "Pedro Colina",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/352826.png"
+    },
+    {
+      "id": "18308-marinho",
+      "name": "Márinho",
+      "age": 30,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/419176.png"
+    },
+    {
+      "id": "18308-robert",
+      "name": "Robert",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/78029.png"
+    },
+    {
+      "id": "18308-italo",
+      "name": "Italo",
+      "age": 23,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/266251.png"
+    },
+    {
+      "id": "18308-jhonathanm",
+      "name": "Jhonathan Moc",
+      "age": 35,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/157533.png"
+    },
+    {
+      "id": "18308-marcel",
+      "name": "Marcel",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/195359.png"
+    },
+    {
+      "id": "18308-vinicius",
+      "name": "Vinicius",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/313156.png"
+    },
+    {
+      "id": "18308-rodrigo",
+      "name": "Rodrigo",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true
+    },
+    {
+      "id": "18308-luizfernan",
+      "name": "Luiz Fernando",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/80643.png"
+    },
+    {
+      "id": "18308-andersonuc",
+      "name": "Anderson Uchôa",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54024.png"
+    },
+    {
+      "id": "18308-dieguinho",
+      "name": "Dieguinho",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/473800.png"
+    },
+    {
+      "id": "18308-joaozinho",
+      "name": "Joãozinho",
+      "age": 24,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/419174.png"
+    },
+    {
+      "id": "18308-luisfernan",
+      "name": "Luis Fernando",
+      "age": 27,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77999.png"
+    },
+    {
+      "id": "18308-wallace",
+      "name": "Wallace",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/239786.png"
+    },
+    {
+      "id": "18308-erickmaran",
+      "name": "Erick Maranhão",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/198142.png"
+    },
+    {
+      "id": "18308-edsoncariu",
+      "name": "Edson Caríus",
+      "age": 37,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54656.png"
+    },
+    {
+      "id": "18308-kadubarone",
+      "name": "Kadu Barone",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/160245.png"
+    },
+    {
+      "id": "18308-viniciusba",
+      "name": "Vinicius Bala",
+      "age": 28,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/195519.png"
+    },
+    {
+      "id": "18308-edgo",
+      "name": "Édgo",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/354994.png"
+    },
+    {
+      "id": "18308-vaniilsond",
+      "name": "Vaníilson de Lima Silva",
+      "age": 35,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/96408.png"
+    },
+    {
+      "id": "18308-manoel",
+      "name": "Manoel",
+      "age": 36,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/54439.png"
+    },
+    {
+      "id": "18308-tobinha",
+      "name": "Tobinha",
+      "age": 32,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/266488.png"
+    },
+    {
+      "id": "18308-rafaelibia",
+      "name": "Rafael Ibiapino",
+      "age": 33,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/115519.png"
+    },
+    {
+      "id": "18308-rafaelmira",
+      "name": "Rafael Miranda Nogueira",
+      "age": 24,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/344432.png"
+    }
+  ]
+}

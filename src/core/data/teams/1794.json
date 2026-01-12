@@ -1,0 +1,346 @@
+{
+  "id": "1794",
+  "name": "Flamengo W",
+  "shortName": "FLA",
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#ffffff"
+  },
+  "formation": "4-3-3",
+  "metadata": {
+    "h2hBias": {},
+    "trend": 0.9796538529158247,
+    "prestige": 4
+  },
+  "logo": "https://media.api-sports.io/football/teams/1794.png",
+  "venue": {
+    "id": null,
+    "name": null,
+    "address": null,
+    "city": null,
+    "capacity": null,
+    "surface": null
+  },
+  "players": [
+    {
+      "id": "1794-isacruz",
+      "name": "Isa Cruz",
+      "age": 20,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/284067.png"
+    },
+    {
+      "id": "1794-karolalves",
+      "name": "Karol Alves",
+      "age": 27,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77434.png"
+    },
+    {
+      "id": "1794-viviholzel",
+      "name": "Vivi Holzel",
+      "age": 35,
+      "position": "GK",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/466916.png"
+    },
+    {
+      "id": "1794-gabibarbie",
+      "name": "Gabi Barbieri",
+      "age": 21,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311467.png"
+    },
+    {
+      "id": "1794-bibi",
+      "name": "Bibi",
+      "age": 20,
+      "position": "GK",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/462702.png"
+    },
+    {
+      "id": "1794-yasmin",
+      "name": "Yasmin",
+      "age": 23,
+      "position": "GK",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/515331.png"
+    },
+    {
+      "id": "1794-nubia",
+      "name": "Núbia",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/359206.png"
+    },
+    {
+      "id": "1794-diovanna",
+      "name": "Diovanna",
+      "age": 21,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/464035.png"
+    },
+    {
+      "id": "1794-chaiane",
+      "name": "Chaiane",
+      "age": 29,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/311636.png"
+    },
+    {
+      "id": "1794-fabisimoes",
+      "name": "Fabi Simões",
+      "age": 35,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/77313.png"
+    },
+    {
+      "id": "1794-giovannaba",
+      "name": "Giovanna Barraca",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "photo": "https://media.api-sports.io/football/players/411870.png"
+    },
+    {
+      "id": "1794-flaviamota",
+      "name": "Flávia Mota",
+      "age": 23,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/125757.png"
+    },
+    {
+      "id": "1794-sorriso",
+      "name": "Sorriso",
+      "age": 30,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77498.png"
+    },
+    {
+      "id": "1794-analaura",
+      "name": "Ana Laura",
+      "age": 22,
+      "position": "CB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/515332.png"
+    },
+    {
+      "id": "1794-leticiaoli",
+      "name": "Letícia Oliveira",
+      "age": 20,
+      "position": "CB",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/466059.png"
+    },
+    {
+      "id": "1794-abarroso",
+      "name": "A. Barroso",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/68894.png"
+    },
+    {
+      "id": "1794-jucinara",
+      "name": "Jucinara",
+      "age": 31,
+      "position": "CB",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/68739.png"
+    },
+    {
+      "id": "1794-dudarodrig",
+      "name": "Duda Rodrigues",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/362508.png"
+    },
+    {
+      "id": "1794-driely",
+      "name": "Driely",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/311610.png"
+    },
+    {
+      "id": "1794-djeni",
+      "name": "Djeni",
+      "age": 29,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77370.png"
+    },
+    {
+      "id": "1794-marianafer",
+      "name": "Mariana Fernandes",
+      "age": 20,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/484376.png"
+    },
+    {
+      "id": "1794-leidiane",
+      "name": "Leidiane",
+      "age": 25,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/312058.png"
+    },
+    {
+      "id": "1794-monalisabe",
+      "name": "Monalisa Belém",
+      "age": 26,
+      "position": "CM",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77403.png"
+    },
+    {
+      "id": "1794-juferreira",
+      "name": "Ju Ferreira",
+      "age": 34,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77231.png"
+    },
+    {
+      "id": "1794-fernandinh",
+      "name": "Fernandinha",
+      "age": 32,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/213087.png"
+    },
+    {
+      "id": "1794-thaisa",
+      "name": "Thaisa",
+      "age": 36,
+      "position": "CM",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/68743.png"
+    },
+    {
+      "id": "1794-laysa",
+      "name": "Laysa",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/421792.png"
+    },
+    {
+      "id": "1794-gabylouvai",
+      "name": "Gaby Louvain",
+      "age": 21,
+      "position": "CM",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/311611.png"
+    },
+    {
+      "id": "1794-glaucia",
+      "name": "Gláucia",
+      "age": 31,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/77219.png"
+    },
+    {
+      "id": "1794-valeria",
+      "name": "Valéria",
+      "age": 26,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/194792.png"
+    },
+    {
+      "id": "1794-cristiane",
+      "name": "Cristiane",
+      "age": 39,
+      "position": "ST",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/74238.png"
+    },
+    {
+      "id": "1794-vitoriaalm",
+      "name": "Vitória Almeida",
+      "age": 25,
+      "position": "ST",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "photo": "https://media.api-sports.io/football/players/488017.png"
+    }
+  ]
+}
