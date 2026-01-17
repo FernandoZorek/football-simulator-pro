@@ -1,14 +1,22 @@
 import { Team, Player, TeamSectors, Match, FormationType, MatchEvent } from '../types';
 
+// Função auxiliar para obter configurações
+const getConfig = (key: string, defaultValue: number): number => {
+  const stored = localStorage.getItem(key);
+  return stored ? parseFloat(stored) : defaultValue;
+};
+
 /**
- * CONFIGURAÇÕES TÉCNICAS (Via Variáveis de Ambiente)
+ * CONFIGURAÇÕES TÉCNICAS (Via localStorage + fallback para variáveis de ambiente)
  */
-const HOME_ADVANTAGE = Number(import.meta.env.VITE_HOME_ADVANTAGE) || 1.10;
-const RANDOM_FACTOR = Number(import.meta.env.VITE_RANDOMNESS) || 0.20;
-const MIN_GOAL_BASE = Number(import.meta.env.VITE_MIN_GOAL_BASE) || 0.8;
-const MAX_GOAL_BASE = Number(import.meta.env.VITE_MAX_GOAL_BASE) || 1.5;
-const FORMATION_IMPACT = Number(import.meta.env.VITE_FORMATION_IMPACT) || 0.10;
-const TREND_IMPACT = Number(import.meta.env.VITE_TREND_IMPACT) || 0.05;
+const HOME_ADVANTAGE = getConfig('homeAdvantage', Number(import.meta.env.VITE_HOME_ADVANTAGE) || 1.10);
+const RANDOM_FACTOR = getConfig('randomness', Number(import.meta.env.VITE_RANDOMNESS) || 0.20);
+const MIN_GOAL_BASE = getConfig('minGoalBase', Number(import.meta.env.VITE_MIN_GOAL_BASE) || 0.8);
+const MAX_GOAL_BASE = getConfig('maxGoalBase', Number(import.meta.env.VITE_MAX_GOAL_BASE) || 1.5);
+const FORMATION_IMPACT = getConfig('formationImpact', Number(import.meta.env.VITE_FORMATION_IMPACT) || 0.10);
+const TREND_IMPACT = getConfig('trendImpact', Number(import.meta.env.VITE_TREND_IMPACT) || 0.05);
+
+
 
 /**
  * MAPA DE BÔNUS DE FORMAÇÃO
@@ -111,6 +119,7 @@ const pickScorer = (team: Team): Player => {
 export const generateMatchEvents = (home: Team, away: Team, homeScore: number, awayScore: number): MatchEvent[] => {
   const events: MatchEvent[] = [];
 
+
   const addGoals = (team: Team, score: number) => {
     for (let i = 0; i < score; i++) {
       const scorer = pickScorer(team);
@@ -119,7 +128,7 @@ export const generateMatchEvents = (home: Team, away: Team, homeScore: number, a
         type: 'goal',
         playerId: scorer.id,
         teamId: team.id,
-        playerName: scorer.name // Facilitador para a UI
+        playerName: scorer.name
       });
     }
   };
@@ -163,20 +172,20 @@ export const simulateMatch = (home: Team, away: Team, round: number): Partial<Ma
   let homeFinalAttack = homeSectors.attack * HOME_ADVANTAGE;
   let homeFinalMid = homeSectors.midfield * HOME_ADVANTAGE;
   
-  if (home.metadata.h2hBias[away.id]) {
+  if (home.metadata?.h2hBias[away.id]) {
     homeFinalAttack *= home.metadata.h2hBias[away.id];
   }
 
   const homeScore = calculateGoals(
     (homeFinalAttack * 0.7 + homeFinalMid * 0.3),
     (awaySectors.defense * 0.8 + awaySectors.goalkeeping * 0.2),
-    home.metadata.trend
+    home.metadata?.trend
   );
 
   const awayScore = calculateGoals(
     (awaySectors.attack * 0.7 + awaySectors.midfield * 0.3),
     (homeSectors.defense * 0.8 + homeSectors.goalkeeping * 0.2),
-    away.metadata.trend
+    away.metadata?.trend
   );
 
   // GERAÇÃO DOS EVENTOS (MARCADORES)

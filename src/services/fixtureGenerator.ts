@@ -31,7 +31,8 @@ export const generateFixture = (teams: Team[]): Match[] => {
         awayScore: 0,
         status: 'scheduled',
         round,
-        events: []
+        events: [],
+        phase: 'groups'
       });
     }
     // Rotaciona (exceto o primeiro)
@@ -45,7 +46,7 @@ export const generateFixture = (teams: Team[]): Match[] => {
     const firstTurnMatches = matches.filter(m => m.round === firstTurnRound);
 
     firstTurnMatches.forEach((match, idx) => {
-      matches.push({
+      return matches.push({
         id: `m-${round}-${idx}`,
         homeTeamId: match.awayTeamId, // ⬅️ INVERTE O MANDO
         awayTeamId: match.homeTeamId,
@@ -53,7 +54,8 @@ export const generateFixture = (teams: Team[]): Match[] => {
         awayScore: 0,
         status: 'scheduled',
         round,
-        events: []
+        events: [],
+        phase: 'groups'
       });
     });
   }

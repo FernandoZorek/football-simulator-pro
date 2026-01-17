@@ -12,6 +12,7 @@
     "lucide-vue-next": "^0.321.0",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
+    "uuid": "^13.0.0",
     "vue": "^3.4.15",
     "vue-router": "^4.6.4"
   },
