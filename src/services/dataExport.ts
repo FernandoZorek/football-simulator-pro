@@ -10,6 +10,7 @@ export interface SimulationExport {
   championshipId: string;
   championshipName: string;
   season: string;
+  type: 'liga' | 'copa';
   teams: Team[];
   matches: Match[];
   currentRound: number;
@@ -32,11 +33,12 @@ export const exportCurrentSimulation = (): SimulationExport => {
     throw new Error('Nenhuma simulação ativa');
   }
   
-  // ✅ Usa os times DO CAMPEONATO ATUAL, não do teamsStore isolado
+  // Usa os times DO CAMPEONATO ATUAL, não do teamsStore isolado
   const syncedTeams = championshipStore.data.teams.map(originalTeam => {
     const editedTeam = teamsStore.getTeamById(originalTeam.id);
     return editedTeam || originalTeam;
   });
+  console.log('exportCurrentSimulation:', championshipStore.data.type);
   
   return {
     version: '1.0',
@@ -44,6 +46,7 @@ export const exportCurrentSimulation = (): SimulationExport => {
     championshipId: championshipStore.data.id,
     championshipName: championshipStore.data.name,
     season: championshipStore.data.season,
+    type: championshipStore.data.type,
     teams: syncedTeams,
     matches: [...championshipStore.matches],
     currentRound: championshipStore.matches.reduce((max, match) => 
@@ -100,10 +103,12 @@ export const importSimulation = async (data: SimulationExport): Promise<void> =>
     id: data.championshipId,
     name: data.championshipName,
     season: data.season,
+    type: data.type,
     settings: championshipStore.data?.settings || { pointsWin: 3, pointsDraw: 1, hasPlayoffs: false },
     teams: data.teams
   };
   
+  console.log('championship:', championship.data.type);
   championshipStore.loadChampionship(championship);
   championshipStore.matches = data.matches;
   

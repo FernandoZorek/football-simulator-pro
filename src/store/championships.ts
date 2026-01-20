@@ -12,6 +12,13 @@ export const useChampionshipsStore = defineStore('championships', {
   
   actions: {
     addChampionship(championship: ChampionshipConfig) {
+
+        console.log('Adicionando campeonato ao championshipsStore:', {
+          id: championship.id,
+          name: championship.name,
+          type: championship.type,
+          hasType: 'type' in championship
+        });
       // Verifica se já existe
       const exists = this.customChampionships.find(c => c.id === championship.id);
       if (exists) {

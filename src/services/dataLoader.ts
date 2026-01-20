@@ -109,6 +109,7 @@ export async function loadChampionship(id: string): Promise<Championship> {
       id: memoryChamp.id,
       name: memoryChamp.name,
       season: memoryChamp.season,
+      type: memoryChamp.type,
       settings: memoryChamp.settings,
       teams,
     };

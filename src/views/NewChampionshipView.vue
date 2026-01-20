@@ -160,6 +160,13 @@ const saveToMemory = () => {
   newChampionship.value.teamIds = [...selectedTeams.value];
   
   championshipsStore.addChampionship(newChampionship.value);
+
+    console.log('Salvando campeonato no store (championshipsStore):', {
+    id: newChampionship.value.id,
+    name: newChampionship.value.name,
+    type: newChampionship.value.type,
+    hasType: 'type' in newChampionship.value
+  });
   
   const action = isEditing.value ? 'atualizado' : 'salvo';
   alert(`✅ Campeonato ${action} em memória!`);

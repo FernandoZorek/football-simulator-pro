@@ -121,6 +121,11 @@ export const generateMatchEvents = (home: Team, away: Team, homeScore: number, a
 
 
   const addGoals = (team: Team, score: number) => {
+    if (!team || !team.players || team.players.length === 0) {
+      console.warn('⚠️ Tentativa de adicionar gols a um time inválido ou sem jogadores:', team);
+      return;
+    }
+
     for (let i = 0; i < score; i++) {
       const scorer = pickScorer(team);
       events.push({

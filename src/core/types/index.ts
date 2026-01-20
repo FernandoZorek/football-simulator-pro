@@ -19,7 +19,7 @@ export type FormationType =
 /**
  * FASES DO CAMPEONATO
  */
-export type ChampionshipPhase = 'groups' | 'round_16' | 'quarters' | 'semis' | 'final';
+export type ChampionshipPhase = 'groups' | 'round_32' | 'round_16' | 'quarters' | 'third' | 'semis' | 'final';
 
 export interface Player {
   id: string;

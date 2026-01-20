@@ -18,12 +18,15 @@ const close = () => {
   emit('update:modelValue', false);
 };
 
-const starters = computed(() => 
-  props.team?.players.filter((p: any) => !p.isReserve) || []
-);
-const reserves = computed(() => 
-  props.team?.players.filter((p: any) => p.isReserve) || []
-);
+const starters = computed(() => {
+  if (!props.team?.players) return [];
+  return props.team.players.filter((p: any) => !p.isReserve);
+});
+
+const reserves = computed(() => {
+  if (!props.team?.players) return [];
+  return props.team.players.filter((p: any) => p.isReserve);
+});
 
 const editingPlayer = ref<any>(null);
 const editedPlayer = ref<any>({});

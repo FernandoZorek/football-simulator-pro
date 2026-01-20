@@ -13,9 +13,9 @@ import {
 } from '../services/dataExport';
 
 // Componentes
-import StandingsTable from '../components/LigaChampionship/StandingsTable.vue';
-import TopScorersSection from '../components/LigaChampionship/TopScorersSection.vue';
-import RoundResultsSection from '../components/LigaChampionship/RoundResultsSection.vue';
+import StandingsTable from '../components/Championship/StandingsTable.vue';
+import TopScorersSection from '../components/Championship/TopScorersSection.vue';
+import RoundResultsSection from '../components/Championship/RoundResultsSection.vue';
 import TeamModal from '../components/team/TeamModal.vue';
 import FixtureModal from '../components/LigaChampionship/FixtureModal.vue';
 import { useTeamsStore } from '../store/teams';

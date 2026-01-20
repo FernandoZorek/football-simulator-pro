@@ -20,6 +20,7 @@ const loadActiveSimulations = () => {
     .map(([id, champState]) => ({
       id,
       name: champState.data?.name || 'Campeonato sem nome',
+      type: champState.data?.type || 'liga',
       season: champState.data?.season || 'Sem temporada'
     }))
     .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' }));
@@ -133,7 +134,7 @@ watch(
                 <button
                   v-for="sim in activeSimulations"
                   :key="sim.id"
-                  @click="() => { navigateTo(`/liga/${sim.id}`); showSimulationsMenu = false; }"
+                  @click="() => { navigateTo(`/${sim.type}/${sim.id}`); showSimulationsMenu = false; }"
                   class="w-full text-left px-3 py-2 hover:bg-slate-700/50 transition-colors group"
                 >
                   <div class="font-medium text-white text-sm">{{ sim.name }}</div>
