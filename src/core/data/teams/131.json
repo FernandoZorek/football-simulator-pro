@@ -6,17 +6,17 @@
     "primary": "#000000",
     "secondary": "#ffffff"
   },
-  "formation": "4-3-3",
+  "formation": "4-2-3-1",
   "metadata": {
     "h2hBias": {},
-    "trend": 1.0240709102160899,
-    "prestige": 4
+    "trend": 1.18,
+    "prestige": 5
   },
   "logo": "https://media.api-sports.io/football/teams/131.png",
   "venue": {
     "id": 11531,
     "name": "Neo Química Arena",
-    "address": "Avenida Miguel Inácio Curi, 111, Vila Carmosina, Itaquera",
+    "address": "Avenida Miguel Inácio Curi, 111",
     "city": "São Paulo, São Paulo",
     "capacity": 49205,
     "surface": "grass",
@@ -24,64 +24,44 @@
   },
   "players": [
     {
-      "id": "131-felipelong",
-      "name": "Felipe Longo",
-      "age": 20,
-      "position": "GK",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/415084.png"
-    },
-    {
       "id": "131-hugosouza",
       "name": "Hugo Souza",
       "age": 26,
       "position": "GK",
-      "overall": 75,
+      "overall": 78,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/123759.png"
-    },
-    {
-      "id": "131-kauecamarg",
-      "name": "Kauê Camargo",
-      "age": 21,
-      "position": "GK",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/415083.png"
+      "marketValue": "10.00M €"
     },
     {
       "id": "131-matheusdon",
       "name": "Matheus Donelli",
       "age": 23,
       "position": "GK",
-      "overall": 75,
+      "overall": 70,
       "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/195499.png"
+      "isReserve": true,
+      "marketValue": "1.50M €"
     },
     {
-      "id": "131-andreramal",
+      "id": "131-ftorres",
+      "name": "Félix Torres",
+      "age": 29,
+      "position": "CB",
+      "overall": 69,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "1.00M €"
+    },
+    {
+      "id": "131-aramalho",
       "name": "André Ramalho",
       "age": 33,
       "position": "CB",
-      "overall": 70,
+      "overall": 76,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/1085.png"
-    },
-    {
-      "id": "131-fangileri",
-      "name": "F. Angileri",
-      "age": 31,
-      "position": "CB",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/5987.png"
+      "marketValue": "1.20M €"
     },
     {
       "id": "131-caca",
@@ -90,258 +70,138 @@
       "position": "CB",
       "overall": 75,
       "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/10085.png"
+      "isReserve": true,
+      "marketValue": "1.70M €"
     },
     {
-      "id": "131-gustavohen",
-      "name": "Gustavo Henrique",
-      "age": 32,
+      "id": "131-gpaulista",
+      "name": "Gabriel Paulista",
+      "age": 35,
       "position": "CB",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/9992.png"
-    },
-    {
-      "id": "131-hugo",
-      "name": "Hugo",
-      "age": 28,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/54093.png"
-    },
-    {
-      "id": "131-joaopedro",
-      "name": "João Pedro",
-      "age": 22,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/415085.png"
-    },
-    {
-      "id": "131-leomana",
-      "name": "Léo Mana",
-      "age": 21,
-      "position": "CB",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/361665.png"
-    },
-    {
-      "id": "131-matheusbid",
-      "name": "Matheus Bidu",
-      "age": 26,
-      "position": "CB",
-      "overall": 75,
+      "overall": 78,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/9742.png"
+      "marketValue": "700k €"
     },
     {
-      "id": "131-matheuzinh",
+      "id": "131-matheuzinho",
       "name": "Matheuzinho",
       "age": 25,
-      "position": "CB",
+      "position": "RB",
+      "overall": 77,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "6.00M €"
+    },
+    {
+      "id": "131-mbidu",
+      "name": "Matheus Bidu",
+      "age": 26,
+      "position": "LB",
       "overall": 75,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10161.png"
+      "isReserve": false,
+      "marketValue": "3.00M €"
     },
     {
-      "id": "131-ftorres",
-      "name": "F. Torres",
-      "age": 28,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/63964.png"
-    },
-    {
-      "id": "131-andre",
-      "name": "Andre",
-      "age": 19,
-      "position": "CM",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/544679.png"
-    },
-    {
-      "id": "131-luizgustav",
-      "name": "Luiz Gustavo",
-      "age": 19,
-      "position": "CM",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/414353.png"
-    },
-    {
-      "id": "131-breno",
-      "name": "Breno",
+      "id": "131-bbidon",
+      "name": "Breno Bidon",
       "age": 20,
       "position": "CM",
-      "overall": 80,
+      "overall": 78,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/363693.png"
-    },
-    {
-      "id": "131-charles",
-      "name": "Charles",
-      "age": 29,
-      "position": "CM",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/9577.png"
+      "isReserve": false,
+      "marketValue": "14.00M €"
     },
     {
       "id": "131-rgarro",
-      "name": "R. Garro",
-      "age": 27,
-      "position": "CM",
-      "overall": 75,
+      "name": "Rodrigo Garro",
+      "age": 28,
+      "position": "CAM",
+      "overall": 78,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/5794.png"
-    },
-    {
-      "id": "131-joaovitor",
-      "name": "Joao Vitor",
-      "age": 18,
-      "position": "CM",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/544700.png"
-    },
-    {
-      "id": "131-jmartinez",
-      "name": "J. Martínez",
-      "age": 31,
-      "position": "CM",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/53148.png"
+      "isReserve": false,
+      "marketValue": "12.00M €"
     },
     {
       "id": "131-raniele",
       "name": "Raniele",
       "age": 29,
-      "position": "CM",
-      "overall": 75,
+      "position": "CDM",
+      "overall": 74,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/160436.png"
+      "isReserve": false,
+      "marketValue": "3.00M €"
     },
     {
-      "id": "131-ryangustav",
-      "name": "Ryan Gustavo",
-      "age": 22,
-      "position": "CM",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/403953.png"
-    },
-    {
-      "id": "131-aromero",
-      "name": "Á. Romero",
-      "age": 33,
-      "position": "ST",
+      "id": "131-jmartinez",
+      "name": "José Martínez",
+      "age": 31,
+      "position": "CDM",
       "overall": 70,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/2521.png"
+      "marketValue": "2.00M €"
     },
     {
       "id": "131-acarrillo",
-      "name": "A. Carrillo",
+      "name": "André Carrillo",
       "age": 34,
-      "position": "ST",
-      "overall": 70,
+      "position": "CM",
+      "overall": 74,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/2426.png"
-    },
-    {
-      "id": "131-mdepay",
-      "name": "M. Depay",
-      "age": 31,
-      "position": "ST",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/667.png"
-    },
-    {
-      "id": "131-dieguinho",
-      "name": "Dieguinho",
-      "age": 18,
-      "position": "ST",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/463975.png"
-    },
-    {
-      "id": "131-guilhermei",
-      "name": "Guilherme Inácio",
-      "age": 18,
-      "position": "ST",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/463979.png"
-    },
-    {
-      "id": "131-hectorhern",
-      "name": "Héctor Hernández",
-      "age": 30,
-      "position": "ST",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/47116.png"
-    },
-    {
-      "id": "131-kayke",
-      "name": "Kayke",
-      "age": 21,
-      "position": "ST",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/415090.png"
+      "marketValue": "900k €"
     },
     {
       "id": "131-vitinho",
       "name": "Vitinho",
       "age": 32,
-      "position": "ST",
-      "overall": 70,
+      "position": "LW",
+      "overall": 73,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10177.png"
+      "marketValue": "1.00M €"
     },
     {
-      "id": "131-yurialbert",
+      "id": "131-mdepay",
+      "name": "Memphis Depay",
+      "age": 31,
+      "position": "ST",
+      "overall": 81,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "8.00M €"
+    },
+    {
+      "id": "131-yurialberto",
       "name": "Yuri Alberto",
       "age": 24,
       "position": "ST",
-      "overall": 75,
+      "overall": 76,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "22.00M €"
+    },
+    {
+      "id": "131-guinegao",
+      "name": "Gui Negão",
+      "age": 18,
+      "position": "ST",
+      "overall": 67,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10007.png"
+      "marketValue": "8.00M €"
+    },
+    {
+      "id": "131-dieguinho",
+      "name": "Dieguinho",
+      "age": 18,
+      "position": "RW",
+      "overall": 70,
+      "energy": 100,
+      "isReserve": true,
+      "marketValue": "1.50M €"
     }
   ]
 }
