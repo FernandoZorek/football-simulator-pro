@@ -3,20 +3,20 @@
   "name": "Santos",
   "shortName": "SAN",
   "colors": {
-    "primary": "#000000",
-    "secondary": "#ffffff"
+    "primary": "#ffffff",
+    "secondary": "#000000"
   },
   "formation": "4-3-3",
   "metadata": {
     "h2hBias": {},
-    "trend": 0.8882679744047501,
+    "trend": 1.15,
     "prestige": 4
   },
   "logo": "https://media.api-sports.io/football/teams/128.png",
   "venue": {
     "id": 10494,
     "name": "Estádio Urbano Caldeira",
-    "address": "Rue Princesa Isabel 77, Vila Belmiro",
+    "address": "Rua Princesa Isabel 77, Vila Belmiro",
     "city": "Santos, São Paulo",
     "capacity": 21256,
     "surface": "grass",
@@ -24,324 +24,224 @@
   },
   "players": [
     {
-      "id": "128-diogenes",
-      "name": "Diógenes",
-      "age": 24,
-      "position": "GK",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/321454.png"
-    },
-    {
-      "id": "128-gabrielbra",
+      "id": "128-gbrazao",
       "name": "Gabriel Brazão",
       "age": 25,
       "position": "GK",
-      "overall": 75,
+      "overall": 80,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/31007.png"
+      "marketValue": "11.00M €"
     },
     {
-      "id": "128-aduarte",
-      "name": "A. Duarte",
+      "id": "128-diogenes",
+      "name": "Diógenes",
       "age": 25,
-      "position": "CB",
-      "overall": 75,
+      "position": "GK",
+      "overall": 68,
       "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/70549.png"
-    },
-    {
-      "id": "128-gescobar",
-      "name": "G. Escobar",
-      "age": 28,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/6637.png"
+      "isReserve": true,
+      "marketValue": "200k €"
     },
     {
       "id": "128-afrias",
-      "name": "A. Frías",
+      "name": "Adonis Frías",
       "age": 27,
       "position": "CB",
-      "overall": 75,
+      "overall": 77,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/5872.png"
-    },
-    {
-      "id": "128-igorvinici",
-      "name": "Igor Vinicius",
-      "age": 28,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/9949.png"
-    },
-    {
-      "id": "128-joaopauloa",
-      "name": "João Paulo Ananias",
-      "age": 18,
-      "position": "CB",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/527683.png"
-    },
-    {
-      "id": "128-joaobasso",
-      "name": "João Basso",
-      "age": 28,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/41609.png"
-    },
-    {
-      "id": "128-joaopedroc",
-      "name": "JoÃ£o Pedro Chermont",
-      "age": 19,
-      "position": "CB",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/414394.png"
-    },
-    {
-      "id": "128-luanperes",
-      "name": "Luan Peres",
-      "age": 31,
-      "position": "CB",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/71.png"
-    },
-    {
-      "id": "128-mayke",
-      "name": "Mayke",
-      "age": 33,
-      "position": "CB",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/9917.png"
-    },
-    {
-      "id": "128-souza",
-      "name": "Souza",
-      "age": 19,
-      "position": "CB",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/414455.png"
-    },
-    {
-      "id": "128-viniciusli",
-      "name": "Vinicius Lira",
-      "age": 18,
-      "position": "CB",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/507379.png"
+      "marketValue": "3.00M €"
     },
     {
       "id": "128-zeivaldo",
       "name": "Zé Ivaldo",
       "age": 28,
       "position": "CB",
+      "overall": 76,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "2.50M €"
+    },
+    {
+      "id": "128-aduarte",
+      "name": "Alexis Duarte",
+      "age": 25,
+      "position": "CB",
       "overall": 75,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10114.png"
+      "marketValue": "2.00M €"
     },
     {
-      "id": "128-willianara",
-      "name": "Willian Arão",
-      "age": 33,
-      "position": "CM",
-      "overall": 70,
+      "id": "128-lperes",
+      "name": "Luan Peres",
+      "age": 31,
+      "position": "CB",
+      "overall": 73,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10173.png"
+      "marketValue": "800k €"
     },
     {
-      "id": "128-gabrielbon",
+      "id": "128-souza",
+      "name": "Souza",
+      "age": 19,
+      "position": "LB",
+      "overall": 79,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "5.00M €"
+    },
+    {
+      "id": "128-gescobar",
+      "name": "Gonzalo Escobar",
+      "age": 28,
+      "position": "LB",
+      "overall": 73,
+      "energy": 100,
+      "isReserve": true,
+      "marketValue": "1.00M €"
+    },
+    {
+      "id": "128-jpchermont",
+      "name": "JP Chermont",
+      "age": 19,
+      "position": "RB",
+      "overall": 77,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "3.00M €"
+    },
+    {
+      "id": "128-mayke",
+      "name": "Mayke",
+      "age": 33,
+      "position": "RB",
+      "overall": 75,
+      "energy": 100,
+      "isReserve": true,
+      "marketValue": "2.00M €"
+    },
+    {
+      "id": "128-arao",
+      "name": "Willian Arão",
+      "age": 33,
+      "position": "CDM",
+      "overall": 74,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "1.20M €"
+    },
+    {
+      "id": "128-jschmidt",
+      "name": "João Schmidt",
+      "age": 32,
+      "position": "CDM",
+      "overall": 73,
+      "energy": 100,
+      "isReserve": true,
+      "marketValue": "900k €"
+    },
+    {
+      "id": "128-gbontempo",
       "name": "Gabriel Bontempo",
       "age": 20,
       "position": "CM",
-      "overall": 80,
+      "overall": 78,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/506275.png"
-    },
-    {
-      "id": "128-hyan",
-      "name": "Hyan",
-      "age": 21,
-      "position": "CM",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/459836.png"
-    },
-    {
-      "id": "128-joaoschmid",
-      "name": "João Schmidt",
-      "age": 32,
-      "position": "CM",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/32901.png"
-    },
-    {
-      "id": "128-trincon",
-      "name": "T. Rincón",
-      "age": 37,
-      "position": "CM",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/2452.png"
-    },
-    {
-      "id": "128-nikitasolo",
-      "name": "Nikita Solodchenko",
-      "age": 24,
-      "position": "ST",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/197500.png"
-    },
-    {
-      "id": "128-thaciano",
-      "name": "Thaciano",
-      "age": 30,
-      "position": "CM",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10492.png"
-    },
-    {
-      "id": "128-victorhugo",
-      "name": "Victor Hugo",
-      "age": 21,
-      "position": "CM",
-      "overall": 80,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/352371.png"
+      "isReserve": false,
+      "marketValue": "5.00M €"
     },
     {
       "id": "128-zerafael",
       "name": "Zé Rafael",
       "age": 32,
       "position": "CM",
-      "overall": 70,
+      "overall": 76,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/9932.png"
-    },
-    {
-      "id": "128-abarreal",
-      "name": "Á. Barreal",
-      "age": 25,
-      "position": "ST",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/6052.png"
-    },
-    {
-      "id": "128-bbrahimi",
-      "name": "B. Brahimi",
-      "age": 25,
-      "position": "ST",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/19250.png"
-    },
-    {
-      "id": "128-gcaballero",
-      "name": "G. Caballero",
-      "age": 24,
-      "position": "CM",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/119128.png"
-    },
-    {
-      "id": "128-ldiaz",
-      "name": "L. Díaz",
-      "age": 27,
-      "position": "CM",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/64172.png"
-    },
-    {
-      "id": "128-gabrielbar",
-      "name": "Gabriel Barbosa",
-      "age": 29,
-      "position": "ST",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10174.png"
-    },
-    {
-      "id": "128-guilherme",
-      "name": "Guilherme",
-      "age": 30,
-      "position": "ST",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/9588.png"
+      "marketValue": "2.50M €"
     },
     {
       "id": "128-neymar",
       "name": "Neymar",
       "age": 33,
-      "position": "ST",
-      "overall": 70,
+      "position": "CAM",
+      "overall": 87,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/276.png"
+      "isReserve": false,
+      "marketValue": "10.00M €"
     },
     {
-      "id": "128-brollheise",
-      "name": "B. Rollheiser",
+      "id": "128-vhugo",
+      "name": "Victor Hugo",
+      "age": 21,
+      "position": "CAM",
+      "overall": 76,
+      "energy": 100,
+      "isReserve": true,
+      "marketValue": "3.50M €"
+    },
+    {
+      "id": "128-abarreal",
+      "name": "Álvaro Barreal",
       "age": 25,
-      "position": "CM",
+      "position": "LW",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "7.00M €"
+    },
+    {
+      "id": "128-robinhojr",
+      "name": "Robinho Junior",
+      "age": 18,
+      "position": "LW",
+      "overall": 76,
+      "energy": 100,
+      "isReserve": true,
+      "marketValue": "5.00M €"
+    },
+    {
+      "id": "128-rollheiser",
+      "name": "Benjamín Rollheiser",
+      "age": 25,
+      "position": "RW",
+      "overall": 80,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "7.00M €"
+    },
+    {
+      "id": "128-gabigol",
+      "name": "Gabriel Barbosa",
+      "age": 29,
+      "position": "ST",
+      "overall": 78,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "4.00M €"
+    },
+    {
+      "id": "128-morelos",
+      "name": "Alfredo Morelos",
+      "age": 29,
+      "position": "ST",
       "overall": 75,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/119485.png"
+      "marketValue": "2.20M €"
     },
     {
-      "id": "128-tiquinhoso",
+      "id": "128-tiquinho",
       "name": "Tiquinho Soares",
       "age": 34,
       "position": "ST",
-      "overall": 70,
+      "overall": 74,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/390.png"
+      "marketValue": "900k €"
     }
   ]
 }

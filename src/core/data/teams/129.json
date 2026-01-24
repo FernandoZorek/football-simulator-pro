@@ -1,21 +1,21 @@
 {
   "id": "129",
-  "name": "Ceara",
+  "name": "Ceará SC",
   "shortName": "CEA",
   "colors": {
-    "primary": "#333333",
+    "primary": "#000000",
     "secondary": "#ffffff"
   },
   "formation": "4-3-3",
   "metadata": {
     "h2hBias": {},
-    "trend": 1.10242295366958,
-    "prestige": 4
+    "trend": 1.05,
+    "prestige": 3
   },
   "logo": "https://media.api-sports.io/football/teams/129.png",
   "venue": {
     "id": 225,
-    "name": "Estádio Governador Plácido Aderaldo Castelo",
+    "name": "Arena Castelão",
     "address": "Avenida Alberto Craveiro, Passaré",
     "city": "Fortaleza, Ceará",
     "capacity": 63903,
@@ -24,194 +24,174 @@
   },
   "players": [
     {
-      "id": "129-brunoferre",
+      "id": "129-bruno",
       "name": "Bruno Ferreira",
       "age": 31,
       "position": "GK",
-      "overall": 70,
+      "overall": 72,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/54689.png"
-    },
-    {
-      "id": "129-fernandomi",
-      "name": "Fernando Miguel",
-      "age": 40,
-      "position": "GK",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/10547.png"
+      "marketValue": "300k €"
     },
     {
       "id": "129-richard",
-      "name": "Richard",
+      "name": "Richard Costa",
       "age": 34,
       "position": "GK",
       "overall": 70,
       "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/80184.png"
-    },
-    {
-      "id": "129-alexsilva",
-      "name": "Alex Silva",
-      "age": 31,
-      "position": "CB",
-      "overall": 70,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/10516.png"
-    },
-    {
-      "id": "129-dieguinho",
-      "name": "Dieguinho",
-      "age": 30,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/159920.png"
-    },
-    {
-      "id": "129-eder",
-      "name": "Éder",
-      "age": 30,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/10118.png"
-    },
-    {
-      "id": "129-lucasolive",
-      "name": "Lucas Oliveira",
-      "age": 29,
-      "position": "CB",
-      "overall": 75,
-      "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/9308.png"
+      "isReserve": true,
+      "marketValue": "150k €"
     },
     {
       "id": "129-marllon",
       "name": "Marllon",
       "age": 33,
       "position": "CB",
+      "overall": 73,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "400k €"
+    },
+    {
+      "id": "129-eder",
+      "name": "Éder",
+      "age": 30,
+      "position": "CB",
+      "overall": 72,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "250k €"
+    },
+    {
+      "id": "129-lotavio",
+      "name": "Luiz Otávio",
+      "age": 37,
+      "position": "CB",
       "overall": 70,
       "energy": 100,
-      "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/10232.png"
+      "isReserve": true,
+      "marketValue": "75k €"
     },
     {
-      "id": "129-rafaelvena",
-      "name": "Rafael Venâncio",
-      "age": 19,
-      "position": "CB",
-      "overall": 80,
+      "id": "129-fernando",
+      "name": "Fernando",
+      "age": 26,
+      "position": "LB",
+      "overall": 73,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/454501.png"
+      "marketValue": "400k €"
     },
     {
-      "id": "129-willianmac",
-      "name": "Willian Machado",
-      "age": 29,
-      "position": "CB",
-      "overall": 75,
+      "id": "129-rramos",
+      "name": "Rafael Ramos",
+      "age": 31,
+      "position": "RB",
+      "overall": 73,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/80654.png"
+      "marketValue": "400k €"
     },
     {
-      "id": "129-guilhermel",
-      "name": "Guilherme Luiz",
-      "age": 20,
-      "position": "CM",
-      "overall": 80,
+      "id": "129-zanocelo",
+      "name": "Vinícius Zanocelo",
+      "age": 24,
+      "position": "CDM",
+      "overall": 78,
       "energy": 100,
       "isReserve": false,
-      "photo": "https://media.api-sports.io/football/players/507389.png"
+      "marketValue": "2.00M €"
     },
     {
-      "id": "129-lucaslima",
+      "id": "129-dieguinho",
+      "name": "Dieguinho",
+      "age": 30,
+      "position": "CDM",
+      "overall": 77,
+      "energy": 100,
+      "isReserve": false,
+      "marketValue": "1.50M €"
+    },
+    {
+      "id": "129-llima",
       "name": "Lucas Lima",
       "age": 25,
-      "position": "CM",
-      "overall": 75,
+      "position": "CDM",
+      "overall": 71,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/9684.png"
+      "marketValue": "350k €"
     },
     {
-      "id": "129-matheusara",
+      "id": "129-maraujo",
       "name": "Matheus Araújo",
       "age": 23,
-      "position": "CM",
-      "overall": 75,
+      "position": "CAM",
+      "overall": 76,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/237102.png"
+      "isReserve": false,
+      "marketValue": "1.50M €"
     },
     {
-      "id": "129-richardson",
-      "name": "Richardson",
-      "age": 34,
-      "position": "CM",
-      "overall": 70,
+      "id": "129-jalano",
+      "name": "Juan Alano",
+      "age": 29,
+      "position": "RM",
+      "overall": 74,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/10276.png"
+      "isReserve": false,
+      "marketValue": "800k €"
     },
     {
       "id": "129-vina",
       "name": "Vina",
-      "age": 33,
-      "position": "CM",
-      "overall": 70,
+      "age": 34,
+      "position": "CAM",
+      "overall": 73,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/9886.png"
+      "marketValue": "300k €"
     },
     {
-      "id": "129-fernandinh",
+      "id": "129-fernandinho",
       "name": "Fernandinho",
       "age": 28,
-      "position": "ST",
-      "overall": 75,
+      "position": "LW",
+      "overall": 74,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/77680.png"
+      "isReserve": false,
+      "marketValue": "700k €"
     },
     {
-      "id": "129-gabrielsil",
-      "name": "Gabriel Silva",
-      "age": 21,
-      "position": "ST",
-      "overall": 80,
+      "id": "129-phenrique",
+      "name": "Pedro Henrique",
+      "age": 35,
+      "position": "RW",
+      "overall": 72,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/544702.png"
+      "isReserve": false,
+      "marketValue": "500k €"
     },
     {
       "id": "129-lucca",
       "name": "Lucca",
       "age": 22,
       "position": "ST",
-      "overall": 75,
+      "overall": 74,
       "energy": 100,
-      "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/354012.png"
+      "isReserve": false,
+      "marketValue": "700k €"
     },
     {
-      "id": "129-pedrohenri",
-      "name": "Pedro Henrique",
-      "age": 35,
-      "position": "ST",
-      "overall": 70,
+      "id": "129-lrian",
+      "name": "Lucas Rian",
+      "age": 25,
+      "position": "CF",
+      "overall": 69,
       "energy": 100,
       "isReserve": true,
-      "photo": "https://media.api-sports.io/football/players/2382.png"
+      "marketValue": "200k €"
     }
   ]
 }
