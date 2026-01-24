@@ -4,13 +4,12 @@ import { computed } from 'vue';
 import type { Match } from '../../core/types';
 import { ListOrdered } from 'lucide-vue-next';
 
-// Props: recebe todos os matches e uma função para fechar
 const props = defineProps<{
   matches: Match[];
   modelValue: boolean;
   onGetTeamName: (teamId: string) => string;
-  onGetTeamLogo: (teamId: string) => string | undefined; // 👈 nova prop
-  onGetTeamShortName: (teamId: string) => string;       // 👈 fallback para logo
+  onGetTeamLogo: (teamId: string) => string | undefined;
+  onGetTeamShortName: (teamId: string) => string;
 }>();
 
 const emit = defineEmits<{
@@ -21,7 +20,6 @@ const close = () => {
   emit('update:modelValue', false);
 };
 
-// Agrupa os matches por rodada
 const groupedMatches = computed(() => {
   const groups: Record<number, Match[]> = {};
 
@@ -40,16 +38,11 @@ const groupedMatches = computed(() => {
     .sort((a, b) => a.round - b.round);
 });
 
-// Gera uma data realista para o jogo com base na rodada
 function generateMatchDateTime(round: number, matchIndex: number): string {
-  // Data base: primeiro sábado do campeonato (ajuste conforme necessário)
-  const baseDate = new Date('2026-05-16T12:00:00'); // 16/mai/2026 é um sábado
-
-  // Cada rodada = 7 dias
+  const baseDate = new Date('2026-05-16T12:00:00');
   const roundOffsetDays = (round - 1) * 7;
 
-  // Definir dia da semana e horário com base no índice do jogo
-  let dayOfWeekOffset = 5; // sábado por padrão (0 = dom, 1 = seg, ..., 6 = sáb)
+  let dayOfWeekOffset = 5;
   let time = '16:00';
 
   // 📅 Distribuição realista
@@ -69,35 +62,29 @@ function generateMatchDateTime(round: number, matchIndex: number): string {
     dayOfWeekOffset = 4; // sexta-feira
     time = '21:00';
   } else if (matchIndex === 5) {
-    dayOfWeekOffset = 3; // quinta? -> mas vamos usar QUARTA (3 = quarta)
+    dayOfWeekOffset = 3; // quinta
     time = '19:00';
   } else if (matchIndex === 6) {
     dayOfWeekOffset = 3; // quarta
     time = '21:00';
   } else {
-    // Caso raro: mais de 7 jogos → distribui nos dias disponíveis
     const extraIndex = matchIndex - 7;
-    const days = [5, 0, 5, 0, 4, 3, 3]; // repetir padrão
+    const days = [5, 0, 5, 0, 4, 3, 3];
     const times = ['16:00', '16:00', '18:00', '18:00', '21:00', '19:00', '21:00'];
     dayOfWeekOffset = days[extraIndex % days.length];
     time = times[extraIndex % times.length];
   }
 
-  // Calcular a data real
   const startDate = new Date(baseDate);
-  // Ajusta para o sábado da semana base
-  startDate.setDate(baseDate.getDate() - baseDate.getDay() + 6); // 6 = sábado
+  startDate.setDate(baseDate.getDate() - baseDate.getDay() + 6);
 
-  // Adiciona offset da rodada
   const roundDate = new Date(startDate);
   roundDate.setDate(startDate.getDate() + roundOffsetDays);
 
-  // Agora ajusta para o dia específico da rodada
-  const currentDay = roundDate.getDay(); // 0 = dom, ..., 6 = sáb
+  const currentDay = roundDate.getDay();
   const daysUntilTarget = (dayOfWeekOffset - currentDay + 7) % 7;
   roundDate.setDate(roundDate.getDate() + daysUntilTarget);
 
-  // Formata para "Sáb, 17/05 • 16:00"
   const formatter = new Intl.DateTimeFormat('pt-BR', {
     weekday: 'short',
     day: '2-digit',
@@ -108,8 +95,6 @@ function generateMatchDateTime(round: number, matchIndex: number): string {
   const weekday = parts.find(p => p.type === 'weekday')?.value || '';
   const day = parts.find(p => p.type === 'day')?.value || '';
   const month = parts.find(p => p.type === 'month')?.value || '';
-
-  // Remove ponto do "Sáb." -> "Sáb"
   const cleanWeekday = weekday.replace('.', '');
 
   return `${cleanWeekday}, ${day}/${month} • ${time}`;

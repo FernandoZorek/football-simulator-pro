@@ -19,7 +19,18 @@ export type FormationType =
 /**
  * FASES DO CAMPEONATO
  */
-export type ChampionshipPhase = 'groups' | 'round_32' | 'round_16' | 'quarters' | 'third' | 'semis' | 'final';
+export type ChampionshipPhase = 
+  | 'groups' 
+  | 'round_32' 
+  | 'round_16' 
+  | 'quarters' 
+  | 'semis' 
+  | 'third' 
+  | 'final';
+
+// ────────────────────────────────────────
+// ENTIDADES BÁSICAS
+// ────────────────────────────────────────
 
 export interface Player {
   id: string;
@@ -29,6 +40,7 @@ export interface Player {
   overall: number;
   energy: number; // 0 a 100 (para simular cansaço)
   isReserve: boolean;
+  photo?: string; // URL ou caminho da foto do jogador
 }
 
 /**
@@ -51,18 +63,27 @@ export interface Team {
   shortName: string; // Ex: "FLA"
   formation: FormationType;
   players: Player[];
+  logo?: string; // URL ou caminho do escudo
   metadata: {
     h2hBias: Record<string, number>; // Vantagem contra IDs específicos
     trend: number;    // -1 (crise) a 1 (auge)
     prestige: number; // 1 a 5 estrelas (influencia público/pressão)
   };
-
   stats?: TeamSectors; // Calculado em runtime
 }
 
-/**
- * ESTRUTURA DE PARTIDA REFORMULADA
- */
+// ────────────────────────────────────────
+// PARTIDAS E EVENTOS
+// ────────────────────────────────────────
+
+export interface MatchEvent {
+  minute: number;
+  type: 'goal' | 'yellow_card' | 'red_card' | 'injury';
+  playerId: string;
+  teamId: string;
+  playerName?: string; // Facilitar exibição sem buscar no array de times
+}
+
 export interface Match {
   id: string;
   // No mata-mata, os IDs podem ser nulos até a fase anterior acabar
@@ -85,17 +106,14 @@ export interface Match {
   };
 
   // Identificadores para progressão automática
-  nextMatchId?: string; // ID do jogo para onde o vencedor vai
-  path?: 'home' | 'away'; // Se o vencedor entra como home ou away no próximo jogo
+  nextMatchId?: string;
+  path?: 'home' | 'away';
+  bracketSide?: 'left' | 'right';
 }
 
-export interface MatchEvent {
-  minute: number;
-  type: 'goal' | 'yellow_card' | 'red_card' | 'injury';
-  playerId: string;
-  teamId: string;
-  playerName?: string; // Facilitar exibição sem buscar no array de times
-}
+// ────────────────────────────────────────
+// GRUPOS (COPAS)
+// ────────────────────────────────────────
 
 export interface Group {
   id: string;
@@ -103,29 +121,60 @@ export interface Group {
   teamIds: string[]; // IDs dos times que pertencem a este grupo
 }
 
-/**
- * ENTIDADE DE CAMPEONATO ATUALIZADA
- */
+// ────────────────────────────────────────
+// CONFIGURAÇÕES DE CAMPEONATO
+// ────────────────────────────────────────
+
+export interface ChampionshipSettings {
+  minTeamsPerGroup: number | undefined;
+  maxTeamsPerGroup: number | undefined;
+  qualifiedPerGroup: number | undefined;
+  pointsWin: number;
+  pointsDraw: number;
+  hasPlayoffs: boolean;
+  isTwoLegged: boolean;
+}
+
+export interface CopaSettings {
+  hasGroups?: boolean;
+  minTeamsPerGroup?: number;
+  maxTeamsPerGroup?: number;
+  qualifiedPerGroup?: number;
+  matchupType?: string; // ex: 'within_group', 'cross_groups'
+  autoAssignGroups?: boolean;
+}
+
+// ────────────────────────────────────────
+// CAMPEONATO
+// ────────────────────────────────────────
+
 export interface Championship {
   id: string;
   name: string;
   season: string;
-  teams: Team[];  
   type: 'liga' | 'copa';
-  currentPhase: ChampionshipPhase;
-  settings: {
-    pointsWin: number;
-    pointsDraw: number;
-    hasPlayoffs: boolean;
-    isTwoLegged: boolean; // Se o mata-mata tem ida e volta
-  };
-  // Armazena os grupos de forma estruturada
+  teams: Team[];
+  
+  // Metadados visuais
+  logo?: string;
+  trophy?: string;
+
+  // Configurações
+  settings: ChampionshipSettings;
+  copaSettings?: CopaSettings; // apenas relevante se type === 'copa'
+
+  // Estrutura de grupos (copa)
+  customGroups?: Array<{ name: string; teamIds: string[] }>;
   groups?: Group[];
+
+  // Estado da simulação (não faz parte do campeonato original)
+  currentPhase?: ChampionshipPhase;
 }
 
-/**
- * CONFIGURAÇÃO GLOBAL (Variáveis de Ambiente)
- */
+// ────────────────────────────────────────
+// CONFIGURAÇÃO GLOBAL DA SIMULAÇÃO
+// ────────────────────────────────────────
+
 export interface SimulationConfig {
   homeAdvantage: number;
   randomness: number;

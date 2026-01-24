@@ -14,7 +14,6 @@ const navigateTo = (path: string) => {
   router.push(path);
 };
 
-// Carrega simulações ativas
 const loadActiveSimulations = () => {
   activeSimulations.value = Object.entries(championshipStore.championships)
     .map(([id, champState]) => ({
@@ -38,7 +37,6 @@ onMounted(() => {
   loadActiveSimulations();
 });
 
-// Observa mudanças no store
 watch(
   () => Object.keys(championshipStore.championships).length,
   () => {
@@ -51,7 +49,6 @@ watch(
   <header class="bg-slate-800/90 backdrop-blur-md border-b border-slate-700 sticky top-0 z-40 mb-8">
     <div class="max-w-7xl mx-auto px-4 md:px-8 py-3">
       <div class="flex flex-wrap items-center justify-between gap-4">
-        <!-- Logo e título -->
         <div class="flex items-center gap-3">
           <div class="bg-blue-600 p-2 rounded-xl shadow-lg shadow-blue-500/20">
             <Trophy class="w-6 h-6 text-white" />
@@ -64,7 +61,6 @@ watch(
           </h1>
         </div>
         
-        <!-- Menu de atalhos -->
         <nav class="flex flex-wrap items-center gap-2 relative">
           <button
             @click="navigateTo('/championships')"
@@ -102,7 +98,6 @@ watch(
             <span class="hidden sm:inline">Configurações</span>
           </button>
           
-          <!-- Simulações Ativas Dropdown -->
           <div class="relative" v-if="activeSimulations.length > 0">
             <button
               @click="showSimulationsMenu = !showSimulationsMenu"
@@ -121,7 +116,6 @@ watch(
               </svg>
             </button>
             
-            <!-- Dropdown Menu -->
             <div 
               v-show="showSimulationsMenu"
               class="absolute right-0 mt-2 w-64 bg-slate-800 border border-slate-700 rounded-lg shadow-xl z-50"
@@ -158,7 +152,6 @@ watch(
 </template>
 
 <style scoped>
-/* Para fechar o menu ao clicar fora */
 [v-cloak] {
   display: none;
 }

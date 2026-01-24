@@ -15,7 +15,6 @@ const closeModal = () => {
   emit('update:modelValue', false);
 };
 
-// Estado para novo time
 const newTeam = ref({
   name: '',
   shortName: '',
@@ -29,7 +28,6 @@ const newTeam = ref({
     surface: 'grass' as const,
     image: ''
   },
-  // ✅ METADATA
   metadata: {
     h2hBias: {},
     trend: 0,
@@ -37,20 +35,20 @@ const newTeam = ref({
   }
 });
 
-// ✅ Opção de jogadores genéricos
 const createGenericPlayers = ref(false);
-
-// Validação
 const isValid = ref(false);
 
-// Atualiza validação
 watch(() => newTeam.value.name, () => {
   isValid.value = newTeam.value.name.trim() !== '';
 });
 
 // Gera jogadores genéricos baseados na formação
 const generateGenericPlayers = (formation: string) => {
-  const players = [];
+  const players: {
+    id: string; name: string; age: number; // 18-27 anos
+    position: string; overall: number; // 60-79 overall
+    energy: number; isReserve: boolean; photo: string;
+  }[] = [];
   let playerId = 1;
   
   // Define posições baseadas na formação
@@ -85,7 +83,6 @@ const generateGenericPlayers = (formation: string) => {
   return players;
 };
 
-// Cria o time
 const createTeam = () => {
   if (!isValid.value) return;
   
@@ -113,7 +110,6 @@ const createTeam = () => {
   emit('create-team', createdTeam);
   closeModal();
   
-  // Reseta formulário
   newTeam.value = {
     name: '',
     shortName: '',
@@ -135,16 +131,6 @@ const createTeam = () => {
   };
   createGenericPlayers.value = false;
 };
-
-// Função para normalizar strings
-const normalizeString = (str: string): string => {
-  return str
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '');
-};
 </script>
 
 <template>
@@ -154,12 +140,10 @@ const normalizeString = (str: string): string => {
         class="bg-slate-800 rounded-2xl border border-slate-700 w-full max-w-md max-h-[90vh] overflow-y-auto"
         @click.stop
       >
-        <!-- Header fixo -->
         <div class="p-6 border-b border-slate-700 sticky top-0 bg-slate-800/95 backdrop-blur-sm z-10">
           <h3 class="text-xl font-bold text-white">Criar Novo Time</h3>
         </div>
         
-        <!-- Formulário com rolagem -->
         <div class="p-6">
           <div class="space-y-4">
           <div>
@@ -199,7 +183,6 @@ const normalizeString = (str: string): string => {
             </select>
           </div>
           
-          <!-- ✅ CAMPOS DE METADATA -->
           <div class="border-t border-slate-700 pt-4">
             <h4 class="font-bold text-slate-300 mb-3">Configurações Avançadas</h4>
             
@@ -239,7 +222,6 @@ const normalizeString = (str: string): string => {
             />
           </div>
           
-          <!-- ✅ CHECKBOX DE JOGADORES GENÉRICOS -->
           <div class="flex items-center gap-2">
             <input
               v-model="createGenericPlayers"
@@ -323,7 +305,6 @@ const normalizeString = (str: string): string => {
           </div>
         </div>
         
-                    <!-- Botões no final -->
             <div class="flex gap-3 pt-4">
               <button
                 @click="createTeam"

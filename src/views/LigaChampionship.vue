@@ -7,12 +7,7 @@ import type { Team } from '../core/types';
 import { generateFixture } from '../services/fixtureGenerator';
 import { Trophy, ListOrdered, Calendar } from 'lucide-vue-next';
 import { loadChampionship } from '../services/dataLoader';
-import { 
-  downloadSimulation, 
-  importSimulationFromFile 
-} from '../services/dataExport';
-
-// Componentes
+import { downloadSimulation, importSimulationFromFile } from '../services/dataExport';
 import StandingsTable from '../components/Championship/StandingsTable.vue';
 import TopScorersSection from '../components/Championship/TopScorersSection.vue';
 import RoundResultsSection from '../components/Championship/RoundResultsSection.vue';
@@ -25,21 +20,19 @@ const teamsStore = useTeamsStore();
 const route = useRoute();
 const router = useRouter();
 const store = useChampionshipStore();
-
 const championshipId = computed(() => route.params.id as string);
-
 const currentRound = ref(1);
 const error = ref<string | null>(null);
 const selectedTeam = ref<Team | null>(null);
 const isModalOpen = ref(false);
 const isFixtureModalOpen = ref(false);
 const isTopScorersExpanded = ref(false);
-
-// --- Rodadas: agora todas as rodadas (1 a 38) ---
+const logoUrl = ref<string | null>(null);
+const trophyUrl = ref<string | null>(null);
 const allRounds = computed(() => {
   if (!store.data?.teams.length) return [];
   const n = store.data.teams.length;
-  const totalRounds = (n - 1) * 2; // 38 para 20 times
+  const totalRounds = (n - 1) * 2;
   return Array.from({ length: totalRounds }, (_, i) => i + 1);
 });
 
@@ -68,7 +61,6 @@ watch(championshipId, async (newId, oldId) => {
     await teamsStore.loadFromFiles();
     await loadSelectedDataset(newId);
     
-    // Atualiza rodada atual
     const finishedMatches = store.matches.filter(m => m.status === 'finished');
     currentRound.value = finishedMatches.length > 0 
       ? Math.max(...finishedMatches.map(m => m.round)) + 1 
@@ -78,7 +70,6 @@ watch(championshipId, async (newId, oldId) => {
   }
 });
 
-// --- Top Goleadores ---
 const allTopScorers = computed(() => {
   const goalCount: Record<string, { playerId: string; teamId: string; goals: number }> = {};
 
@@ -131,7 +122,6 @@ const displayedTopScorers = computed(() => {
     : allTopScorers.value.slice(0, 5);
 });
 
-// --- Funções auxiliares ---
 const getTeamNameById = (teamId: string): string => {
   return store.data?.teams.find(t => t.id === teamId)?.name || teamId;
 };
@@ -144,7 +134,6 @@ const getTeamShortNameById = (teamId: string) => {
   return store.data?.teams.find(t => t.id === teamId)?.shortName || '??';
 };
 
-// --- Ciclo de vida ---
 onMounted(async () => {
   if (!championshipId.value) {
     router.push('/');
@@ -178,6 +167,8 @@ const loadSelectedDataset = async (id: string) => {
   try {
     // 1. Carrega o campeonato original
     const championship = await loadChampionship(id);
+    trophyUrl.value = championship.trophy || null;
+    logoUrl.value = championship.logo || null;
     
     // 2. Carrega times editados do store persistente
     await teamsStore.loadFromFiles();
@@ -204,7 +195,6 @@ const loadSelectedDataset = async (id: string) => {
   }
 };
 
-// --- Ações ---
 const handleSimulate = () => {
   store.simulateRound(currentRound.value);
   const totalRounds = ((store.data?.teams.length || 0) - 1) * 2;
@@ -295,16 +285,25 @@ const handleImportSimulation = async (event: Event) => {
         class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6 bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-xl"
       >
         <div class="flex items-center gap-4">
-          <div class="bg-blue-600 p-3 rounded-lg shadow-lg shadow-blue-500/20">
-            <Trophy :size="32" class="text-white" />
+          <div class="w-[200px] h-[140px] bg-white rounded-lg flex items-center justify-center overflow-hidden" v-if="logoUrl">           
+            <img
+              :src="logoUrl"
+              alt="Logo"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <div>
-            <h1 class="text-2xl md:text-3xl font-black uppercase tracking-tighter">
-              {{ store.data?.name || 'Carregando...' }}
-            </h1>
-            <p class="text-slate-400 font-medium">
-              Temporada {{ store.data?.season }} • Ida e Volta ({{ allRounds.length }} rodadas)
-            </p>
+          <div class="flex items-center gap-4" v-else>
+            <div class="bg-blue-600 p-3 rounded-lg shadow-lg shadow-blue-500/20">
+              <Trophy :size="64" class="text-white" />
+            </div>
+            <div>
+              <h1 class="text-2xl md:text-3xl font-black uppercase tracking-tighter">
+                {{ store.data?.name || 'Carregando...' }}
+              </h1>
+              <p class="text-slate-400 font-medium">
+                Temporada {{ store.data?.season }} • Ida e Volta ({{ allRounds.length }} rodadas)
+              </p>
+            </div>
           </div>
                 <button
         @click="handleResetSimulation"

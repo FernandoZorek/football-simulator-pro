@@ -13,6 +13,7 @@ export interface SimulationExport {
   type: 'liga' | 'copa';
   teams: Team[];
   matches: Match[];
+  customGroups?: Array<{ name: string; teamIds: string[] }>;
   currentRound: number;
 }
 
@@ -33,12 +34,10 @@ export const exportCurrentSimulation = (): SimulationExport => {
     throw new Error('Nenhuma simulação ativa');
   }
   
-  // Usa os times DO CAMPEONATO ATUAL, não do teamsStore isolado
   const syncedTeams = championshipStore.data.teams.map(originalTeam => {
     const editedTeam = teamsStore.getTeamById(originalTeam.id);
     return editedTeam || originalTeam;
   });
-  console.log('exportCurrentSimulation:', championshipStore.data.type);
   
   return {
     version: '1.0',
@@ -46,9 +45,10 @@ export const exportCurrentSimulation = (): SimulationExport => {
     championshipId: championshipStore.data.id,
     championshipName: championshipStore.data.name,
     season: championshipStore.data.season,
-    type: championshipStore.data.type,
+    type: championshipStore.data.type || 'liga',
     teams: syncedTeams,
     matches: [...championshipStore.matches],
+    customGroups: championshipStore.data.customGroups,
     currentRound: championshipStore.matches.reduce((max, match) => 
       match.status === 'finished' ? Math.max(max, match.round) : max, 0
     ) + 1
@@ -99,14 +99,15 @@ export const importSimulation = async (data: SimulationExport): Promise<void> =>
   }
   
   // ✅ Cria campeonato com os times da simulação
-  const championship = {
-    id: data.championshipId,
-    name: data.championshipName,
-    season: data.season,
-    type: data.type,
-    settings: championshipStore.data?.settings || { pointsWin: 3, pointsDraw: 1, hasPlayoffs: false },
-    teams: data.teams
-  };
+const championship = {
+  id: data.championshipId,
+  name: data.championshipName,
+  season: data.season,
+  type: data.type || 'liga',
+  settings: championshipStore.data?.settings || { pointsWin: 3, pointsDraw: 1, hasPlayoffs: false },
+  teams: data.teams,
+  customGroups: data.customGroups,
+};
   
   console.log('championship:', championship.data.type);
   championshipStore.loadChampionship(championship);

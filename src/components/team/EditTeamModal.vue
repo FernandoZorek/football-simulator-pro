@@ -16,16 +16,13 @@ const closeModal = () => {
   emit('update:modelValue', false);
 };
 
-// ✅ Inicializa com valores padrão seguros
 const editedTeam = ref({
   ...props.team,
-  // ✅ Garante que metadata exista
   metadata: {
     h2hBias: props.team.metadata?.h2hBias || {},
     trend: props.team.metadata?.trend || 0,
     prestige: props.team.metadata?.prestige || 1
   },
-  // ✅ Garante que venue exista
   venue: props.team.venue || {
     name: '',
     city: '',
@@ -36,18 +33,13 @@ const editedTeam = ref({
   }
 });
 
-// ✅ Opção de jogadores genéricos
 const createGenericPlayers = ref(false);
-
-// Validação
 const isValid = ref(true);
 
-// Atualiza validação
 watch(() => editedTeam.value.name, () => {
   isValid.value = editedTeam.value.name.trim() !== '';
 });
 
-// Gera jogadores genéricos baseados na formação
 const generateGenericPlayers = (formation: string) => {
   const players = [];
   let playerId = 1;
@@ -83,13 +75,11 @@ const generateGenericPlayers = (formation: string) => {
   return players;
 };
 
-// Salva as edições
 const saveTeam = () => {
   if (!isValid.value) return;
   
   const updatedTeam = {
     ...editedTeam.value,
-    // ✅ Garante estrutura correta para o simulador
     metadata: {
       h2hBias: editedTeam.value.metadata.h2hBias,
       trend: editedTeam.value.metadata.trend,
@@ -97,7 +87,6 @@ const saveTeam = () => {
     }
   };
   
-  // ✅ Adiciona jogadores genéricos se solicitado
   if (createGenericPlayers.value) {
     updatedTeam.players = generateGenericPlayers(editedTeam.value.formation);
   }
@@ -165,7 +154,6 @@ const saveTeam = () => {
               />
             </div>
             
-            <!-- ✅ CAMPOS DE METADATA -->
             <div class="border-t border-slate-700 pt-4">
             <h4 class="font-bold text-slate-300 mb-3">Configurações Avançadas</h4>
             
@@ -195,7 +183,6 @@ const saveTeam = () => {
             </div>
         </div>
             
-            <!-- ✅ CHECKBOX DE JOGADORES GENÉRICOS -->
             <div class="flex items-center gap-2">
               <input
                 v-model="createGenericPlayers"

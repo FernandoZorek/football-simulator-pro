@@ -1,26 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useChampionshipStore } from '../../store/championship';
-import { ListOrdered } from 'lucide-vue-next';
 const store = useChampionshipStore();
-
-
-
 const props = defineProps<{
   standings: any[];
   onTeamClick: (standing: any) => void;
   showGroup?: boolean;
 }>();
 
-const getGroupName = (groupId: string): string => {
-  if (!store.data?.groups) return '-';
-  
-  const group = store.data.groups.find(g => g.id === groupId);
-  return group ? group.name : '-';
-};
 
-
-// Agrupa standings por grupo (apenas para copas)
 const groupedStandings = computed(() => {
   if (!props.showGroup) return null;
   
@@ -31,7 +19,6 @@ const groupedStandings = computed(() => {
     groups[groupId].push(standing);
   });
   
-  // Ordena os grupos alfabeticamente pelo nome
   return Object.entries(groups)
     .map(([groupId, standings]) => {
       const group = props.standings.find(s => s.group === groupId)?.group;
@@ -39,21 +26,34 @@ const groupedStandings = computed(() => {
     })
     .sort((a, b) => (a.group || '').localeCompare(b.group || ''));
 });
+
+const getGroupLetter = (groupId: string): string => {
+  if (!store.data?.groups) return '?';
+  
+  const group = store.data.groups.find(g => g.id === groupId);
+  if (!group) return '?';
+  
+  const parts = group.name.trim().split(' ');
+  const letter = parts[parts.length - 1];
+  
+  if (letter.length === 1) {
+    return letter;
+  }
+  
+  return group.name.trim().charAt(0).toUpperCase();
+};
 </script>
 
 <template>
-  <!-- Loop por grupos (copa) ou única tabela (liga) -->
   <div v-for="groupData in (groupedStandings || [{ groupId: 'all', group: null, standings: standings }])" :key="groupData.groupId">
     <section class="bg-slate-800 rounded-2xl border border-slate-700 shadow-sm overflow-hidden mb-6 last:mb-8">
-      <!-- Cabeçalho do grupo (apenas para copas) -->
       <div v-if="showGroup" class="p-4 bg-slate-700/50 border-b border-slate-700 flex items-center gap-2">
-        <h3 class="font-bold text-slate-200">Grupo </h3>
+        <h3 class="font-bold text-slate-200">Grupo</h3>
         <div class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold">
-          {{ groupData.group ? getGroupName(groupData.group) :'?' }}
+          {{ getGroupLetter(groupData.group) }}
         </div>
       </div>
       
-      <!-- Cabeçalho da tabela (comum para ambos) -->
       <div class="overflow-x-auto">
         <table class="w-full">
           <thead>
@@ -61,7 +61,6 @@ const groupedStandings = computed(() => {
               <th class="p-3 text-center w-10">#</th>
               <th class="p-3">Clube</th>
               <th class="p-3 text-center">P</th>
-              <!-- Coluna "J" (jogos) apenas para copas -->
               <th v-if="showGroup" class="p-3 text-center">J</th>
               <th class="p-3 text-center">V</th>
               <th class="p-3 text-center">E</th>
@@ -101,7 +100,6 @@ const groupedStandings = computed(() => {
               <td class="p-3 text-center font-black text-white bg-slate-700/20">
                 {{ team.points }}
               </td>
-              <!-- Coluna "J" (jogos) apenas para copas -->
               <td v-if="showGroup" class="p-3 text-center text-slate-400">
                 {{
                   team.win + team.draw + team.loss

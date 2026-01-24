@@ -280,8 +280,9 @@ export const calculateGroupStandings = (
   const standings: any[] = [];
   
   championship.groups?.forEach(group => {
+    // Em calculateGroupStandings
     const groupStandings: any = {};
-    
+
     // Inicializa standings para cada time do grupo
     group.teamIds.forEach(teamId => {
       groupStandings[teamId] = {
@@ -292,7 +293,7 @@ export const calculateGroupStandings = (
         loss: 0,
         goalsFor: 0,
         goalsAgainst: 0,
-        group: group.id
+        group: group.id // 👈 Isso está correto - usa o ID do grupo
       };
     });
     

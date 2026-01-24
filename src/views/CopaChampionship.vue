@@ -31,6 +31,9 @@ const selectedTeam = ref<Team | null>(null);
 const isModalOpen = ref(false);
 const isFixtureModalOpen = ref(false);
 const selectedViewRound = ref(1);
+const isTopScorersExpanded = ref(false);
+const trophyUrl = ref<string | null>(null);
+const logoUrl = ref<string | null>(null);
 
 // --- Fases disponíveis ---
 const availablePhases = computed(() => {
@@ -173,6 +176,11 @@ onMounted(async () => {
   await teamsStore.loadFromFiles();
   await loadSelectedDataset(championshipId.value);
 
+  if (store.data && store.matches.length === 0) {
+    console.log('⚠️ Campeonato carregado sem partidas. Forçando reset...');
+    store.resetSimulation();
+  }
+  
   syncComponentStateWithSimulation();
   syncPhaseStatusWithSimulation();
   console.log('####currentPhase',currentPhase);
@@ -205,6 +213,7 @@ const nextGroupRound = computed(() => {
 const loadSelectedDataset = async (id: string) => {
   error.value = null;
   try {
+    
     // 1. Carrega o campeonato original
     const championship = await loadChampionship(id);
     
@@ -222,27 +231,29 @@ const loadSelectedDataset = async (id: string) => {
       teamsStore.updateTeam(team);
     }
     
+    trophyUrl.value = championship.trophy || null;
+    logoUrl.value = championship.logo || null;
     // 5. Atualiza o campeonato com times sincronizados
     const syncedChampionship = {
       ...championship,
-      teams: syncedTeams
+      teams: syncedTeams,
+      settings: {
+    ...championship.settings,
+    // 👇 Lê as configurações de copa do campeonato original (se existirem)
+    minTeamsPerGroup: championship.settings.minTeamsPerGroup || 
+                     (championship.type === 'copa' ? 3 : undefined),
+    maxTeamsPerGroup: championship.settings.maxTeamsPerGroup || 
+                     (championship.type === 'copa' ? 6 : undefined),
+    qualifiedPerGroup: championship.settings.qualifiedPerGroup || 
+                     (championship.type === 'copa' ? 2 : undefined)
+      },
+    customGroups: championship.customGroups
     };
 
     console.log('Times sincronizados:', syncedTeams.map(t => ({ id: t.id, name: t.name })));
 
     store.loadChampionship(syncedChampionship);
 
-    // 🔁 RESETAR ESTADO LOCAL AO CARREGAR O CAMPEONATO
-    currentPhase.value = 'groups';
-    selectedViewRound.value = 1;
-    phaseSimulationStatus.value = {
-      groups: 'pending',
-      round_32: 'pending',
-      round_16: 'pending',
-      quarters: 'pending',
-      semis: 'pending',
-      final: 'pending'
-    };
   } catch (err) {
     error.value = err instanceof Error ? err.message : 'Erro ao carregar campeonato';
     console.error(err);
@@ -384,15 +395,15 @@ const phaseSimulationStatus = ref<Record<ChampionshipPhase, 'pending' | 'complet
   round_16: 'pending',
   quarters: 'pending',
   semis: 'pending',
-  final: 'pending'
+  final: 'pending',
+  third: 'pending'
 });
 
-const handleAdvanceToNextPhase = () => {
+const handleAdvanceToNextPhase = () => {  
   const currentIndex = availablePhases.value.indexOf(currentPhase.value);
   const nextPhase = availablePhases.value[currentIndex + 1];
 
   if (nextPhase) {
-    // Prepara a próxima fase
     let nextUpdatedMatches = store.matches;
 
     if (currentPhase.value === 'groups') {
@@ -414,13 +425,12 @@ const handleAdvanceToNextPhase = () => {
 
     store.updateMatches(nextUpdatedMatches);
     currentPhase.value = nextPhase;
-    phaseSimulationStatus.value[nextPhase] = 'pending'; // Próxima fase começa pendente
+    phaseSimulationStatus.value[nextPhase] = 'pending';
   }
 };
 
 watch(() => store.data, (newData) => {
   if (newData) {
-    // Quando o campeonato é carregado, garanta que o estado local esteja sincronizado
     currentPhase.value = 'groups';
     selectedViewRound.value = 1;
     phaseSimulationStatus.value = {
@@ -436,8 +446,13 @@ watch(() => store.data, (newData) => {
 
 const syncComponentStateWithSimulation = () => {
   if (!store.data) return;
+  if (store.matches.length === 0 || store.matches.every(m => m.status === 'scheduled')) {
+    currentPhase.value = 'groups';
+    phaseSimulationStatus.value.groups = 'pending';
+    selectedViewRound.value = 1;
+    return;
+  }
   
-  // Determina a fase atual com base nos resultados reais
   const completedPhases = availablePhases.value.filter(phase => 
     isPhaseCompleted(store.matches, phase)
   );
@@ -448,7 +463,6 @@ const syncComponentStateWithSimulation = () => {
       ? availablePhases.value[lastCompletedIndex + 1]
       : 'final';
     
-    // Verifica se a fase atual está concluída
     if (isPhaseCompleted(store.matches, currentPhase.value)) {
       phaseSimulationStatus.value[currentPhase.value] = 'completed';
     } else {
@@ -459,7 +473,6 @@ const syncComponentStateWithSimulation = () => {
     phaseSimulationStatus.value.groups = 'pending';
   }
 
-  // Atualiza rodada selecionada
   const finishedMatches = store.matches.filter(m => m.status === 'finished');
   if (finishedMatches.length > 0) {
     selectedViewRound.value = Math.max(...finishedMatches.map(m => m.round));
@@ -472,10 +485,10 @@ const syncComponentStateWithSimulation = () => {
   console.log('Rodada selecionada:', selectedViewRound.value);
 };
 
+
 const syncPhaseStatusWithSimulation = () => {
   if (!store.data) return;
   
-  // Para cada fase, verifica se está concluída
   availablePhases.value.forEach(phase => {
     if (isPhaseCompleted(store.matches, phase)) {
       phaseSimulationStatus.value[phase] = 'completed';
@@ -490,21 +503,29 @@ const syncPhaseStatusWithSimulation = () => {
   <div class="min-h-screen bg-slate-900 text-slate-100">    
     <NavigationHeader />
     <div class="max-w-6xl mx-auto">
-      <!-- Cabeçalho -->
       <header
         class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6 bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-xl"
       >
         <div class="flex items-center gap-4">
-          <div class="bg-blue-600 p-3 rounded-lg shadow-lg shadow-blue-500/20">
-            <Trophy :size="32" class="text-white" />
+          <div class="w-[200px] h-[140px] bg-white rounded-lg flex items-center justify-center overflow-hidden" v-if="logoUrl">           
+            <img
+              :src="logoUrl"
+              alt="Logo"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <div>
-            <h1 class="text-2xl md:text-3xl font-black uppercase tracking-tighter">
-              {{ store.data?.name || 'Carregando...' }}
-            </h1>
-            <p class="text-slate-400 font-medium">
-              Temporada {{ store.data?.season }} • Copa
-            </p>
+          <div class="flex items-center gap-4" v-else>
+            <div class="bg-blue-600 p-3 rounded-lg shadow-lg shadow-blue-500/20">
+              <Trophy :size="64" class="text-white" />
+            </div>
+            <div>
+              <h1 class="text-2xl md:text-3xl font-black uppercase tracking-tighter">
+                {{ store.data?.name || 'Carregando...' }}
+              </h1>
+              <p class="text-slate-400 font-medium">
+                Temporada {{ store.data?.season }} • Copa
+              </p>
+            </div>
           </div>
         </div>
 
@@ -544,7 +565,6 @@ const syncPhaseStatusWithSimulation = () => {
         </div>
       </header>
 
-      <!-- Navegação por fases -->
       <div class="mb-8 flex flex-wrap gap-3 justify-center md:justify-start">
         <button
           v-for="phase in availablePhases"
@@ -559,9 +579,6 @@ const syncPhaseStatusWithSimulation = () => {
         >
           {{ phase === 'groups' ? 'Fase de Grupos' : phase === 'round_32' ? 'Desesseisavos' : phase === 'round_16' ? 'Oitavas' : phase === 'quarters' ? 'Quartas' : phase === 'semis' ? 'Semifinais' : `${phase.toUpperCase()}` }}
         </button>
-      </div>
-
-      <div class="mb-8 text-center">
         <button
           v-if="phaseSimulationStatus[currentPhase] === 'pending'"
           @click="handleSimulatePhase"
@@ -572,7 +589,6 @@ const syncPhaseStatusWithSimulation = () => {
             <Calendar :size="18" />
             <span>SIMULAR RESULTADOS</span>
           </div>
-          <!-- Indicador da próxima rodada -->
           <div v-if="currentPhase === 'groups' && nextGroupRound" class="text-xs bg-white/20 px-2 py-1 rounded-full mt-1">
             Próxima rodada: {{ nextGroupRound }}
           </div>
@@ -595,86 +611,77 @@ const syncPhaseStatusWithSimulation = () => {
         </button>
       </div>
 
-      <!-- Conteúdo principal -->
-     <!-- Conteúdo principal -->
-<main class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
-  <!-- COLUNA ESQUERDA: Tabela principal ou chaveamento -->
-  <div>
-    <!-- Fase de Grupos -->
-    <StandingsTable
-      v-if="currentPhase === 'groups' && store.data"
-      :standings="store.standings"
-      @team-click="openTeamModal"
-      :show-group="true"
-    />
-
-    <!-- Fase Eliminatória -->
-    <PlayoffBracket
-      v-else-if="['round_32', 'round_16', 'quarters', 'semis', 'final'].includes(currentPhase)"
-      :phase="currentPhase"
-      :matches="store.matches"
-      :teams="store.data?.teams || []"
-      :on-get-team-name="getTeamNameById"
-      :on-get-team-logo="getTeamLogoById"
-      :on-get-team-short-name="getTeamShortNameById"
-    />
-  </div>
-
-  <!-- COLUNA DIREITA: Resultados + Artilheiros -->
-  <div class="space-y-8">
-    <!-- Resultados por rodada -->
-    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6" v-if="['groups'].includes(currentPhase)">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-xl font-bold flex items-center gap-2">
-          <Calendar :size="20" />
-          Rodada {{ selectedViewRound }}
-        </h2>
-        <div class="flex gap-2">
-          <button
-            @click="goToPreviousRound"
-            :disabled="selectedViewRound === Math.min(...allRounds)"
-            class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
-          >
-            ←
-          </button>
-          <button
-            @click="goToNextRound"
-            :disabled="selectedViewRound === Math.max(...allRounds)"
-            class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
-          >
-            →
-          </button>
-          </div>
-        </div>
-      
-        <RoundResultsSection
-          :finished-rounds="allRounds"
-          :selected-round="selectedViewRound"
-          :matches-in-selected-round="matchesInSelectedRound"
-          :get-team-name="getTeamNameById"
-          @on-previous="goToPreviousRound"
-          @on-next="goToNextRound"
-          hide-navigation
+    <main class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
+      <div>
+        <StandingsTable
+          v-if="currentPhase === 'groups' && store.data"
+          :standings="store.standings"
+          @team-click="openTeamModal"
+          :show-group="true"
         />
       </div>
+      <div class="space-y-8"  v-if="['groups'].includes(currentPhase)">
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6">
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-xl font-bold flex items-center gap-2">
+              <Calendar :size="20" />
+              Rodada {{ selectedViewRound }}
+            </h2>
+            <div class="flex gap-2">
+              <button
+                @click="goToPreviousRound"
+                :disabled="selectedViewRound === Math.min(...allRounds)"
+                class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
+              >
+                ←
+              </button>
+              <button
+                @click="goToNextRound"
+                :disabled="selectedViewRound === Math.max(...allRounds)"
+                class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
+              >
+                →
+              </button>
+              </div>
+            </div>
+          
+            <RoundResultsSection
+              :finished-rounds="allRounds"
+              :selected-round="selectedViewRound"
+              :matches-in-selected-round="matchesInSelectedRound"
+              :get-team-name="getTeamNameById"
+              @on-previous="goToPreviousRound"
+              @on-next="goToNextRound"
+              hide-navigation
+            />
+          </div>
 
-      <!-- Top Goleadores -->
-      <TopScorersSection
-        :displayed-scorers="isTopScorersExpanded ? allTopScorers : displayedTopScorers"
-        :all-scorers-length="allTopScorers.length"
-        :is-expanded="isTopScorersExpanded"
-        @toggle-expand="isTopScorersExpanded = !isTopScorersExpanded"
+          <TopScorersSection
+            :displayed-scorers="isTopScorersExpanded ? allTopScorers : displayedTopScorers"
+            :all-scorers-length="allTopScorers.length"
+            :is-expanded="isTopScorersExpanded"
+            @toggle-expand="isTopScorersExpanded = !isTopScorersExpanded"
+          />
+        </div>
+      </main>
+
+      <PlayoffBracket
+        v-if="['round_32', 'round_16', 'quarters', 'semis', 'final'].includes(currentPhase)"
+        :phase="currentPhase"
+        :matches="store.matches"
+        :teams="store.data?.teams || []"
+        :trophyUrl="trophyUrl"
+        :availablePhases="availablePhases"
+        :on-get-team-name="getTeamNameById"
+        :on-get-team-logo="getTeamLogoById"
+        :on-get-team-short-name="getTeamShortNameById"
       />
-    </div>
-  </main>
 
-      <!-- Erro -->
       <div v-if="error" class="mt-6 bg-red-500/20 border border-red-500 text-red-500 p-4 rounded-lg">
         ❌ {{ error }}
       </div>
     </div>
 
-    <!-- Modais -->
     <TeamModal
       v-model="isModalOpen"
       :team="selectedTeam"

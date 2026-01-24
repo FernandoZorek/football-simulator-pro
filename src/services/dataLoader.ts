@@ -17,7 +17,13 @@ interface RawChampionship {
     pointsWin: number;
     pointsDraw: number;
     hasPlayoffs: boolean;
+    minTeamsPerGroup?: number;
+    maxTeamsPerGroup?: number;
+    qualifiedPerGroup?: number;
   };
+  customGroups?: Array<{ name: string; teamIds: string[] }>;
+  logo?: string;
+  trophy?: string;
 }
 
 // Lista campeonatos de AMBAS as fontes
@@ -46,6 +52,11 @@ export async function listChampionships() {
       name: champ.name,
       season: champ.season,
       type: champ.type || 'liga',
+      customGroups: champ.customGroups,
+      logo: champ.logo,
+      trophy: champ.trophy,
+      currentPhase: champ.currentPhase,
+      settings: champ.settings,
     });
   }
   
@@ -111,6 +122,10 @@ export async function loadChampionship(id: string): Promise<Championship> {
       season: memoryChamp.season,
       type: memoryChamp.type,
       settings: memoryChamp.settings,
+      customGroups: memoryChamp.customGroups,
+      logo: memoryChamp.logo,
+      trophy: memoryChamp.trophy,
+      currentPhase: memoryChamp.currentPhase,
       teams,
     };
   }
@@ -148,10 +163,14 @@ export async function loadChampionship(id: string): Promise<Championship> {
   }
 
   return {
-    id: rawChamp.id,
-    name: rawChamp.name,
-    season: rawChamp.season,
-    settings: rawChamp.settings,
-    teams,
+  id: rawChamp.id,
+  name: rawChamp.name,
+  season: rawChamp.season,
+  type: rawChamp.type || 'liga',
+  settings: rawChamp.settings,
+  teams,
+  customGroups: undefined,
+  logo: undefined,
+  trophy: undefined
   } as Championship;
 }

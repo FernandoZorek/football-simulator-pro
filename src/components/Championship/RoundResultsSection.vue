@@ -1,7 +1,7 @@
 <!-- src/components/RoundResultsSection.vue -->
 <script setup lang="ts">
 defineProps<{
-  finishedRounds: number[]; // Na verdade, agora é "allRounds"
+  finishedRounds: number[];
   selectedRound: number;
   matchesInSelectedRound: any[];
   getTeamName: (id: string) => string;
@@ -45,13 +45,9 @@ defineEmits<{
         Rodada {{ selectedRound }}
       </div>
     </div>
-
-    <!-- Mensagem se não houver jogos na rodada (não deve acontecer) -->
     <div v-if="matchesInSelectedRound.length === 0" class="text-center text-slate-500 text-xs italic py-4">
       Nenhum jogo nesta rodada.
     </div>
-
-    <!-- Lista de jogos -->
     <div v-else class="space-y-6">
       <div
         v-for="match in matchesInSelectedRound"

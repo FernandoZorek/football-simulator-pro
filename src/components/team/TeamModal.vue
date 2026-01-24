@@ -77,7 +77,6 @@ const cancelEdit = () => {
   editedPlayer.value = {};
 };
 
-// Função para alternar status de reserva
 const toggleReserveStatus = (playerId: string) => {
   const updatedPlayers = props.team.players.map((p: any) => {
     if (p.id === playerId) {
@@ -191,7 +190,6 @@ const handleSaveTeam = (updatedTeam: any) => {
         </div>
 
         <div class="flex flex-col md:flex-row flex-1 overflow-hidden">
-          <!-- Titulares -->
           <div class="w-full md:w-1/2 border-r border-slate-700 overflow-y-auto p-4">
             <div class="flex items-center justify-between mb-4">
               <h3 class="font-bold text-slate-300 uppercase text-sm">Titulares ({{ starters.length }})</h3>
@@ -240,7 +238,6 @@ const handleSaveTeam = (updatedTeam: any) => {
                   >
                     ⬇️
                   </button>
-                  <!-- ✅ Botão de exclusão -->
                   <button
                     @click="confirmDeletePlayer(player.id)"
                     class="p-1 text-red-400 hover:text-red-300 rounded"
@@ -253,7 +250,6 @@ const handleSaveTeam = (updatedTeam: any) => {
             </div>
           </div>
 
-          <!-- Reservas -->
           <div class="w-full md:w-1/2 border-r border-slate-700 overflow-y-auto p-4">
             <div class="flex items-center justify-between mb-4">
               <h3 class="font-bold text-slate-300 uppercase text-sm">Reservas ({{ reserves.length }})</h3>
@@ -299,7 +295,6 @@ const handleSaveTeam = (updatedTeam: any) => {
                   >
                     ⬆️
                   </button>
-                  <!-- ✅ Botão de exclusão -->
                   <button
                     @click="confirmDeletePlayer(player.id)"
                     class="p-1 text-red-400 hover:text-red-300 rounded"
@@ -312,7 +307,6 @@ const handleSaveTeam = (updatedTeam: any) => {
             </div>
           </div>
 
-          <!-- Estádio -->
           <div v-if="team.venue" class="w-full md:w-1/3 p-4 overflow-y-auto">
             <div class="flex justify-between items-center mb-4">
               <h3 class="font-bold text-slate-300 uppercase text-sm">Estádio</h3>
@@ -365,7 +359,6 @@ const handleSaveTeam = (updatedTeam: any) => {
       </div>
     </div>
 
-    <!-- Modal de Edição de Jogador -->
     <div v-if="editingPlayer" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
       <div class="bg-slate-800 rounded-2xl border border-slate-700 w-full max-w-md p-6" @click.stop>
         <h3 class="text-xl font-bold text-white mb-4">Editar Jogador</h3>
@@ -452,14 +445,12 @@ const handleSaveTeam = (updatedTeam: any) => {
       </div>
     </div>
 
-    <!-- Modal de Edição do Time -->
       <EditTeamModal 
         v-model="showEditTeamModal"
         :team="team"
         @save-team="handleSaveTeam"
       />
 
-    <!-- Modal de Confirmação de Exclusão -->
     <div v-if="playerToDelete" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
       <div class="bg-slate-800 rounded-2xl border border-slate-700 w-full max-w-md p-6" @click.stop>
         <h3 class="text-xl font-bold text-white mb-4">Confirmar Exclusão</h3>

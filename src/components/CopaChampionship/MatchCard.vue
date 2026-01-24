@@ -1,4 +1,3 @@
-<!-- src/components/LigaChampionship/MatchCard.vue -->
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { Match, Team } from '../../core/types';
@@ -14,66 +13,70 @@ const props = defineProps<{
 
 const homeTeam = computed(() => props.teams.find(t => t.id === props.match.homeTeamId));
 const awayTeam = computed(() => props.teams.find(t => t.id === props.match.awayTeamId));
-
-const winnerId = computed(() => {
-  return props.getWinner ? props.getWinner(props.match) : null;
-});
-
+const winnerId = computed(() => (props.getWinner ? props.getWinner(props.match) : null));
 const isHomeWinner = computed(() => winnerId.value === props.match.homeTeamId);
 const isAwayWinner = computed(() => winnerId.value === props.match.awayTeamId);
+
+const getTeamName = (teamId: string | null) => (!teamId ? '' : props.onGetTeamName(teamId));
 </script>
 
 <template>
   <div 
-    class="flex items-center justify-between p-3 rounded-lg bg-slate-800/50 border border-slate-700"
+    class="flex flex-col items-center justify-center p-2 rounded-lg bg-slate-800/50 border border-slate-700 w-[90px]"
     :class="{ 'border-yellow-500/50': isFinal }"
   >
-    <!-- Time Mandante -->
-    <div class="flex items-center gap-2 min-w-0">
+    <div class="flex justify-center py-1">
       <div 
         v-if="homeTeam?.logo" 
-        class="w-6 h-6 rounded-full bg-white flex items-center justify-center overflow-hidden"
+        class="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden relative group"
+        :title="getTeamName(match.homeTeamId)"
       >
         <img :src="homeTeam.logo" alt="" class="w-full h-full object-contain">
+        <span 
+          class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10"
+        >
+          {{ getTeamName(match.homeTeamId) }}
+        </span>
       </div>
-      <span 
-        class="font-medium truncate"
-        :class="{ 'text-green-400 font-bold': isHomeWinner && match.status === 'finished' }"
-      >
-        {{ onGetTeamName(match.homeTeamId || '') }}
-      </span>
+      <div v-else class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center text-slate-400 text-sm">?</div>
     </div>
-
-    <!-- Resultado -->
-    <div class="text-center min-w-[80px]">
-      <div v-if="match.status === 'finished'" class="font-bold text-lg">
-        {{ match.homeScore }} - {{ match.awayScore }}
-      </div>
-      <div v-else class="text-slate-400">vs</div>
-      
-      <!-- Pênaltis -->
+    <div class="text-center text-[14px] font-mono my-1">
+      <span 
+        v-if="match.status === 'finished'" 
+        :class="{ 'text-green-400 font-bold': isHomeWinner }"
+      >
+        {{ match.homeScore }}
+      </span>
+      <span v-else class="text-slate-400">–</span>
+      <span class="text-slate-500 mx-1">x</span>
+      <span 
+        v-if="match.status === 'finished'" 
+        :class="{ 'text-green-400 font-bold': isAwayWinner }"
+      >
+        {{ match.awayScore }}
+      </span>
+      <span v-else class="text-slate-400">–</span>
       <div 
         v-if="match.penaltyScore" 
-        class="text-xs text-slate-400 mt-1"
+        class="text-slate-400 mt-1 text-[10px]"
       >
         ({{ match.penaltyScore.home }} - {{ match.penaltyScore.away }} pên.)
       </div>
     </div>
-
-    <!-- Time Visitante -->
-    <div class="flex items-center gap-2 min-w-0">
-      <span 
-        class="font-medium truncate text-right"
-        :class="{ 'text-green-400 font-bold': isAwayWinner && match.status === 'finished' }"
-      >
-        {{ onGetTeamName(match.awayTeamId || '') }}
-      </span>
+    <div class="flex justify-center py-1">
       <div 
         v-if="awayTeam?.logo" 
-        class="w-6 h-6 rounded-full bg-white flex items-center justify-center overflow-hidden"
+        class="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden relative group"
+        :title="getTeamName(match.awayTeamId)"
       >
         <img :src="awayTeam.logo" alt="" class="w-full h-full object-contain">
+        <span 
+          class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10"
+        >
+          {{ getTeamName(match.awayTeamId) }}
+        </span>
       </div>
+      <div v-else class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center text-slate-400 text-sm">?</div>
     </div>
   </div>
 </template>

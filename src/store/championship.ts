@@ -1,14 +1,17 @@
 // src/store/championship.ts
 import { defineStore } from 'pinia';
+import { v4 as uuidv4 } from 'uuid';
 import type { Championship, Match, ChampionshipPhase, Team, Group } from '../core/types';
 import { generateFixture } from '../services/fixtureGenerator';
 import { simulateMatch } from '../core/engine/simulator';
 import { generateCopaFixture, updateKnockoutTeams } from '../services/copaFixtureGenerator';
 import { calculateGroupStandings } from '../core/engine/copaSimulator';
+import { calculateCopaStructure } from '../services/copaStructureCalculator';
 
 interface ChampionshipState {
   data: Championship | null;
   matches: Match[];
+  customGroups?: Array<{ name: string; teamIds: string[] }>;
 }
 
 export const useChampionshipStore = defineStore('championship', {
@@ -205,48 +208,88 @@ export const useChampionshipStore = defineStore('championship', {
       if (!this.championships[championship.id]) {
         let matches: Match[] = [];
         
-        if (championship.type === 'copa') {
-          console.log('Gerando fixture para copa com', championship.teams.length, 'times');
+      if (championship.type === 'copa') {
+        console.log('Gerando fixture para copa com', championship.teams.length, 'times');
+        
+        if (championship.customGroups && championship.customGroups.length > 0) {
+          console.log('Usando grupos personalizados:', championship.customGroups.length, 'grupos');
           
-          // Configuração específica para diferentes números de times
-          let qualifiedPerGroup = 2;
+          // 👇 VALIDA E CONVERTE GRUPOS PERSONALIZADOS
+          const groups: Group[] = championship.customGroups.map((customGroup, index) => {
+            // Filtra apenas teamIds válidos (que existem nos times do campeonato)
+            const validTeamIds = customGroup.teamIds.filter(teamId => 
+              championship.teams.some(t => t.id === teamId)
+            );
+            
+            if (validTeamIds.length === 0) {
+              console.warn(`⚠️ Grupo ${customGroup.name} não tem times válidos.`);
+            }
+            
+            return {
+              id: `group-${uuidv4()}`,
+              name: customGroup.name,
+              teamIds: validTeamIds
+            };
+          });
           
+          // 👇 APLICA A MESMA LÓGICA DE AJUSTE DO RESET!
+          let qualifiedPerGroup = championship.settings.qualifiedPerGroup || 2;
+          
+          // Ajuste automático para casos especiais
           if (championship.teams.length === 12) {
-            qualifiedPerGroup = 4; // 12 times = 2 grupos de 6, 4 classificados por grupo
-          } else if (championship.teams.length === 16) {
-            qualifiedPerGroup = 2; // 16 times = 4 grupos de 4, 2 classificados por grupo
-          } else if (championship.teams.length === 24) {
-            qualifiedPerGroup = 2; // 24 times = 6 grupos de 4, 2 classificados por grupo
-          } else if (championship.teams.length === 8) {
-            qualifiedPerGroup = 2; // 8 times = 2 grupos de 4, 2 classificados por grupo
+            qualifiedPerGroup = 4; // 2 grupos de 6 → 4 classificados
+          } else if (groups.length === 2 && groups[0].teamIds.length >= 5) {
+            qualifiedPerGroup = 4; // Caso genérico: 2 grupos grandes
           }
           
-          // Gera fixture para copa com estrutura dinâmica
+          // Atualiza as configurações do campeonato
+          championship.settings = {
+            ...championship.settings,
+            qualifiedPerGroup: qualifiedPerGroup
+          };
+          
+          // 👇 LOG PARA DEBUG
+          console.log('Grupos personalizados validados:', groups.map(g => ({
+            name: g.name,
+            teamCount: g.teamIds.length
+          })));
+          console.log('qualifiedPerGroup aplicado:', qualifiedPerGroup);
+          
+          // Usa generateCopaFixture para gerar TUDO
           const fixtureResult = generateCopaFixture(
             championship.teams,
             championship.settings.hasPlayoffs,
             {
-              qualifiedPerGroup: championship.settings.qualifiedPerGroup || qualifiedPerGroup
+              qualifiedPerGroup: qualifiedPerGroup,
+              groups: groups
             }
           );
           
-          matches = fixtureResult.matches;
-          
-          // Atualiza o campeonato com os grupos gerados
-          championship.groups = fixtureResult.groups;
-          championship.settings = {
-            ...championship.settings,
-            qualifiedPerGroup: fixtureResult.structure.qualifiedPerGroup
+          this.championships[championship.id] = {
+            championship,
+            matches: fixtureResult.matches
+          };
+        } else {
+          // Gera grupos automaticamente
+          const copaConfig = {
+            minTeamsPerGroup: championship.settings.minTeamsPerGroup || 3,
+            maxTeamsPerGroup: championship.settings.maxTeamsPerGroup || 6,
+            qualifiedPerGroup: championship.settings.qualifiedPerGroup || 2
           };
           
-          console.log('Estrutura gerada:', {
-            groups: fixtureResult.groups.length,
-            teamsPerGroup: fixtureResult.groups[0].teamIds.length,
-            qualifiedPerGroup: fixtureResult.structure.qualifiedPerGroup,
-            totalMatches: matches.length,
-            rounds: Array.from(new Set(matches.map(m => m.round))).sort((a, b) => a - b)
-          });
-        } else {
+          const fixtureResult = generateCopaFixture(
+            championship.teams,
+            championship.settings.hasPlayoffs,
+            copaConfig
+          );
+          
+          championship.groups = fixtureResult.groups;
+          this.championships[championship.id] = {
+            championship,
+            matches: fixtureResult.matches
+          };
+        }
+      } else {
           console.log('Gerando fixture para liga com', championship.teams.length, 'times');
           // Gera fixture para liga
           matches = generateFixture(championship.teams);
@@ -292,30 +335,33 @@ export const useChampionshipStore = defineStore('championship', {
         }
         
         // Atualiza times se necessário
-const updatedTeams = [...currentState.data!.teams];
-championship.teams.forEach(newTeam => {
-  const existingIndex = updatedTeams.findIndex(t => t.id === newTeam.id);
-  if (existingIndex !== -1) {
-    updatedTeams[existingIndex] = newTeam;
-  } else {
-    updatedTeams.push(newTeam);
-  }
-});
+        const updatedTeams = [...currentState.data!.teams];
+        championship.teams.forEach(newTeam => {
+          const existingIndex = updatedTeams.findIndex(t => t.id === newTeam.id);
+          if (existingIndex !== -1) {
+            updatedTeams[existingIndex] = newTeam;
+          } else {
+            updatedTeams.push(newTeam);
+          }
+        });
 
-    // ✅ PRESERVA OS GROUPS EXISTENTES
-      const preservedGroups = currentState.data!.groups;
+        // ✅ PRESERVA OS GROUPS EXISTENTES
+        const preservedGroups = currentState.data!.groups;
 
-      // Atualiza o campeonato mantendo os groups gerados
-      currentState.data = {
-        ...championship,
-        teams: updatedTeams,
-        groups: preservedGroups || championship.groups, // Prioriza groups existentes
-        settings: {
-          ...championship.settings,
-          qualifiedPerGroup: currentState.data!.settings.qualifiedPerGroup
-        }
-      };
-    }
+        // Atualiza o campeonato mantendo os groups gerados
+        currentState.data = {
+          ...championship,
+          teams: updatedTeams,
+          groups: preservedGroups || championship.groups, // Prioriza groups existentes
+          settings: {
+            ...championship.settings,
+            qualifiedPerGroup: currentState.data!.settings.qualifiedPerGroup
+          }
+        };
+        if (championship.customGroups) {
+          currentState.customGroups = championship.customGroups;
+         }
+      }
       
       this.currentChampionshipId = championship.id;
     },
@@ -398,46 +444,78 @@ championship.teams.forEach(newTeam => {
     },
     
     // Reinicia simulação do campeonato atual
-resetSimulation() {
-  if (!this.currentChampionshipId || !this.currentChampionship?.data) return;
-  
-  const currentState = this.championships[this.currentChampionshipId];
-  const originalData = { ...currentState.data }; // Cópia dos dados originais
-  
-  if (originalData.type === 'copa') {
-    console.log('Reiniciando simulação de copa');
-    
-    let qualifiedPerGroup = 2;
-    if (originalData.teams.length === 12) {
-      qualifiedPerGroup = 4;
-    }
-    
-    const fixtureResult = generateCopaFixture(
-      originalData.teams,
-      originalData.settings.hasPlayoffs,
-      {
-        qualifiedPerGroup: originalData.settings.qualifiedPerGroup || qualifiedPerGroup
+    resetSimulation() {
+      if (!this.currentChampionshipId || !this.currentChampionship?.data) return;
+      
+      const currentState = this.championships[this.currentChampionshipId];
+      const originalData = { ...currentState.data };
+      
+      if (originalData.type === 'copa') {
+        console.log('Reiniciando simulação de copa');
+        
+        // 👇 Verifica se há customGroups
+        if (originalData.customGroups && originalData.customGroups.length > 0) {
+          console.log('Usando customGroups ao reiniciar');
+          
+          const groups: Group[] = originalData.customGroups.map((customGroup, index) => ({
+            id: `group-${uuidv4()}`,
+            name: customGroup.name,
+            teamIds: customGroup.teamIds
+          }));
+          
+          // 👇 USA generateCopaFixture PARA GERAR TUDO
+          const fixtureResult = generateCopaFixture(
+            originalData.teams,
+            originalData.settings.hasPlayoffs,
+            {
+              qualifiedPerGroup: originalData.settings.qualifiedPerGroup || 2,
+              groups: groups
+            }
+          );
+          
+          currentState.matches = fixtureResult.matches;
+          currentState.data = {
+            ...originalData,
+            groups: groups
+          };
+          
+          if (originalData.customGroups) {
+            currentState.customGroups = originalData.customGroups;
+          }
+        } else {
+          // 👇 Gera grupos automaticamente (comportamento padrão)
+          const copaConfig = {
+            minTeamsPerGroup: originalData.settings.minTeamsPerGroup || 3,
+            maxTeamsPerGroup: originalData.settings.maxTeamsPerGroup || 6,
+            qualifiedPerGroup: originalData.settings.qualifiedPerGroup || 2
+          };
+          
+          const fixtureResult = generateCopaFixture(
+            originalData.teams,
+            originalData.settings.hasPlayoffs,
+            copaConfig
+          );
+          
+          currentState.matches = fixtureResult.matches;
+          currentState.data = {
+            ...originalData,
+            groups: fixtureResult.groups,
+            settings: {
+              ...originalData.settings,
+              qualifiedPerGroup: fixtureResult.structure.qualifiedPerGroup,
+              minTeamsPerGroup: fixtureResult.structure.minTeamsPerGroup,
+              maxTeamsPerGroup: fixtureResult.structure.maxTeamsPerGroup
+            }
+          };
+        }
+      } else {
+        console.log('Reiniciando simulação de liga');
+        currentState.matches = generateFixture(originalData.teams);
+        currentState.data = originalData;
       }
-    );
-    
-    // ✅ Atualiza TUDO no estado
-    currentState.matches = fixtureResult.matches;
-    currentState.data = {
-      ...originalData,
-      groups: fixtureResult.groups,
-      settings: {
-        ...originalData.settings,
-        qualifiedPerGroup: fixtureResult.structure.qualifiedPerGroup
-      }
-    };
-  } else {
-    console.log('Reiniciando simulação de liga');
-    currentState.matches = generateFixture(originalData.teams);
-    currentState.data = originalData;
-  }
-  
-  console.log('Simulação reiniciada com sucesso');
-},
+      
+      console.log('Simulação reiniciada com sucesso');
+    },
     
     // Limpa todas as simulações
     clearAllSimulations() {
@@ -450,3 +528,60 @@ resetSimulation() {
   // Persistência para todo o estado
   persist: true
 });
+
+// Função auxiliar para gerar partidas de grupos personalizados
+const generateGroupMatches = (groups: Group[], teams: Team[]): Match[] => {
+  const matches: Match[] = [];
+  let matchIdCounter = 1;
+  let roundCounter = 1;
+  
+  groups.forEach(group => {
+    // Gera partidas do grupo usando algoritmo Round-Robin
+    const groupTeams = group.teamIds;
+    const totalTeams = groupTeams.length;
+    
+    if (totalTeams < 2) return;
+    
+    // Se for número ímpar, adiciona um "bye"
+    let teams = [...groupTeams];
+    if (totalTeams % 2 !== 0) {
+      teams.push('BYE');
+    }
+    
+    // Cria as rodadas
+    const rounds = [];
+    for (let round = 0; round < teams.length - 1; round++) {
+      const currentRound = [];
+      for (let i = 0; i < teams.length / 2; i++) {
+        const home = teams[i];
+        const away = teams[teams.length - 1 - i];
+        if (home !== 'BYE' && away !== 'BYE') {
+          currentRound.push([home, away]);
+        }
+      }
+      rounds.push(currentRound);
+      const last = teams.pop();
+      teams.splice(1, 0, last);
+    }
+    
+    // Adiciona as partidas
+    rounds.forEach((roundMatches, roundIndex) => {
+      roundMatches.forEach(([home, away]) => {
+        matches.push({
+          id: `group-${group.id}-${matchIdCounter++}`,
+          homeTeamId: home,
+          awayTeamId: away,
+          homeScore: 0,
+          awayScore: 0,
+          status: 'scheduled',
+          round: roundIndex + 1,
+          events: [],
+          phase: 'groups',
+          group: group.id
+        });
+      });
+    });
+  });
+  
+  return matches;
+};
